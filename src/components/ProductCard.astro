@@ -1,0 +1,38 @@
+---
+// src/components/ProductCard.astro
+const { product } = Astro.props;
+
+// Wix devuelve las imágenes principales dentro del objeto "media.mainMedia.image.url"
+// Si no hay imagen, ponemos un gris por defecto.
+const imageUrl = product.media?.mainMedia?.image?.url || "https://via.placeholder.com/400x300?text=Salsa+RoRo's";
+---
+
+<article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 transform hover:-translate-y-1 flex flex-col h-full">
+  
+  <div class="relative w-full h-48 overflow-hidden">
+    <img src={imageUrl} alt={product.name} class="w-full h-full object-cover" />
+  </div>
+  
+  <div class="p-6 flex flex-col grow">
+    <h3 class="text-xl font-lora font-bold text-chocolate mb-2 line-clamp-2">
+      {product.name}
+    </h3>
+    
+    <p class="text-gray-600 text-sm mb-4 grow line-clamp-3">
+      {/* Wix devuelve a veces descripciones con etiquetas HTML, usamos un método seguro si puedes, o texto plano */}
+      {product.description || "Deliciosa salsa artesanal."}
+    </p>
+    
+    <div class="flex items-center justify-between mt-auto">
+      <span class="text-lg font-bold text-rojo">
+        {product.priceData?.formatted?.price}
+      </span>
+      <button 
+        data-producto-id={product._id}
+        class="btn-agregar bg-chocolate text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-rojo transition-colors duration-300"
+      >
+        Agregar
+      </button>
+    </div>
+  </div>
+</article>

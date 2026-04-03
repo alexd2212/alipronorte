@@ -12,6 +12,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.1.3"
+    "@nanostores/react": "^1.1.0",
+    "@tailwindcss/vite": "^4.2.2",
+    "@wix/ecom": "^1.0.1996",
+    "@wix/sdk": "^1.21.5",
+    "@wix/stores": "^1.0.742",
+    "astro": "^6.1.3",
+    "nanostores": "^1.2.0",
+    "react": "^19.2.4",
+    "tailwindcss": "^4.2.2"
   }
 }

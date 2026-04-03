@@ -1,0 +1,104 @@
+---
+import LayoutPages from "../layouts/layoutPages.astro";
+---
+
+<LayoutPages title="Contáctanos">
+  <section class="relative py-24 bg-gray-50 overflow-hidden">
+    <!-- Patrón decorativo de fondo -->
+    <div class="absolute inset-0 bg-[radial-gradient(#e41e2608_1px,transparent_1px)] bg-size-[30px_30px] z-0"></div>
+    
+    <div class="relative z-10 max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        
+        <div class="contact-info">
+          <div class="inline-block bg-red-100 text-red-600 px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+            Estamos para servirte
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-chocolate leading-tight">
+            Hablemos de <span class="text-red-600">Sabor</span>
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed mb-12">
+            ¿Tienes una tienda y quieres distribuir nuestros productos? ¿O simplemente quieres salsas para tu hogar? Déjanos un mensaje.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex gap-6 transition-transform duration-300 hover:translate-x-3">
+              <div class="w-15 h-15 bg-white flex items-center justify-center rounded-xl text-2xl shadow-md border border-gray-100">
+                📍
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-chocolate mb-1">Visítanos</h3>
+                <p class="text-gray-600">Intercomunal Barquisimeto "Duaca, Km.12, Tamaca".</p>
+                <p class="text-gray-600">Estado Lara - Venezuela</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6 transition-transform duration-300 hover:translate-x-3">
+              <div class="w-15 h-15 bg-white flex items-center justify-center rounded-xl text-2xl shadow-md border border-gray-100">
+                📞
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-chocolate mb-1">Llámanos</h3>
+                <p class="text-gray-600">+58 424-527.5766</p>
+                <span class="text-gray-500 text-sm">Atención inmediata</span>
+              </div>
+            </div>
+
+            <div class="flex gap-6 transition-transform duration-300 hover:translate-x-3">
+              <div class="w-15 h-15 bg-white flex items-center justify-center rounded-xl text-2xl shadow-md border border-gray-100">
+                ✉️
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-chocolate mb-1">Escríbenos</h3>
+                <p class="text-gray-600">contacto@alipronorte.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-wrapper bg-white p-10 rounded-2xl shadow-lg border border-gray-100">
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-chocolate mb-2">Envía un mensaje</h3>
+            <p class="text-gray-500">Te responderemos en menos de 24 horas.</p>
+          </div>
+          
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Tu Nombre</label>
+                <input type="text" placeholder="Ej. Jorge Briceño" required class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300" />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Tu Correo</label>
+                <input type="email" placeholder="correo@ejemplo.com" required class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">¿En qué estás interesado?</label>
+              <select class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300">
+                <option>Ventas al Mayor</option>
+                <option>Consumo Personal</option>
+                <option>Sugerencias / Otros</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">Tu Mensaje</label>
+              <textarea rows="4" placeholder="Escribe aquí tu consulta..." class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-chocolate text-white py-4 px-6 rounded-lg font-bold flex items-center justify-center gap-3 hover:bg-red-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+              <span>Enviar Mensaje</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</LayoutPages>

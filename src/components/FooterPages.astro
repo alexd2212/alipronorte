@@ -1,0 +1,41 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="relative w-full mt-20 bg-[url('/banner-pages.png')] bg-cover bg-center">
+  <div class="bg-linear-to-b from-chocolate/85 to-chocolate/95 px-8 pt-16 pb-6">
+    
+    <div class="max-w-300 mx-auto grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr] gap-12 items-start">
+      
+      <div class="flex flex-col items-center md:items-start text-center md:text-left">
+        <img src="/logo.png" alt="RoRo's Logo" class="h-25 mb-6 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]" />
+        <p class="text-gray-300 text-[0.95rem] leading-relaxed max-w-100">
+          Nuestro propósito principal radica en elaborar productos de consumo masivo bajo un acertado control de calidad para brindar opciones ventajosas y competitivas.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <h4 class="text-rojo text-sm uppercase tracking-[2px] mb-6 font-bold">Pagos</h4>
+        <div class="flex flex-wrap justify-center gap-2.5 mb-5">
+          <span class="border border-white/20 px-4 py-1.5 rounded-full text-xs text-white bg-white/5">Zelle</span>
+          <span class="border border-white/20 px-4 py-1.5 rounded-full text-xs text-white bg-white/5">Pago Móvil</span>
+          <span class="border border-white/20 px-4 py-1.5 rounded-full text-xs text-white bg-white/5">Efectivo</span>
+        </div>
+        <p class="text-gray-400 text-[0.85rem]">🚚 Envíos Nacionales</p>
+      </div>
+
+      <div class="flex flex-col items-center md:items-end text-center md:text-right text-gray-300 text-[0.95rem]">
+        <h4 class="text-rojo text-sm uppercase tracking-[2px] mb-6 font-bold">Contacto</h4>
+        <p class="mb-2">Intercomunal Barquisimeto “Duaca, Km. 12, Tamaca". Estado Lara - Venezuela.</p>
+        <p class="text-white font-semibold block mb-1">+58 424-527.5766</p>
+        <p class="text-white font-semibold block">contacto@alipronorte.com</p>
+      </div>
+
+    </div>
+
+    <div class="max-w-300 mx-auto mt-14 pt-6 border-t border-white/10 text-center text-gray-500 text-[0.85rem]">
+      <p>&copy; {currentYear} Alipronorte. Todos los derechos reservados.</p>
+    </div>
+    
+  </div>
+</footer>

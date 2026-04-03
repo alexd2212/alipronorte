@@ -1,6 +1,6 @@
 ---
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/FooterPages.astro";
+import NavbarPages from "../components/NavbarPages.astro";
+import FooterPages from "../components/FooterPages.astro";
 import '../styles/global.css';
 
 interface Props {
@@ -14,19 +14,18 @@ const { title } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Lora:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
     <title>{title} | RoRo's Salsas Artesanales</title>
   </head>
-  
-  <body class="bg-white text-chocolate flex flex-col min-h-screen overflow-x-hidden">
-    <Navbar />
+  <body class="font-sans bg-white text-chocolate flex flex-col min-h-screen">
+    <NavbarPages />
 
-    <main class="flex-1">
-      <slot /> 
+    <main class="main-content flex-1 pt-8">
+      <slot />
     </main>
 
-    <Footer />
+    <FooterPages />
   </body>
 </html>

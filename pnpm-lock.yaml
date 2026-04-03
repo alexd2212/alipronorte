@@ -8,9 +8,33 @@ importers:
 
   .:
     dependencies:
+      '@nanostores/react':
+        specifier: ^1.1.0
+        version: 1.1.0(nanostores@1.2.0)(react@19.2.4)
+      '@tailwindcss/vite':
+        specifier: ^4.2.2
+        version: 4.2.2(vite@7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3))
+      '@wix/ecom':
+        specifier: ^1.0.1996
+        version: 1.0.1996(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+      '@wix/sdk':
+        specifier: ^1.21.5
+        version: 1.21.5
+      '@wix/stores':
+        specifier: ^1.0.742
+        version: 1.0.742(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@wix/sdk@1.21.5)(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
       astro:
         specifier: ^6.1.3
-        version: 6.1.3(rollup@4.60.1)
+        version: 6.1.3(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(yaml@2.8.3)
+      nanostores:
+        specifier: ^1.2.0
+        version: 1.2.0
+      react:
+        specifier: ^19.2.4
+        version: 19.2.4
+      tailwindcss:
+        specifier: ^4.2.2
+        version: 4.2.2
 
 packages:
 
@@ -43,6 +67,10 @@ packages:
     resolution: {integrity: sha512-4GgRzy/+fsBa72/RZVJmGKPmZu9Byn8o4MoLpmNe1m8ZfYnz5emHLQz3U4gLud6Zwl0RZIcgiLD7Uq7ySFuDLA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+
+  '@babel/runtime@7.29.2':
+    resolution: {integrity: sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==}
+    engines: {node: '>=6.9.0'}
 
   '@babel/types@7.29.0':
     resolution: {integrity: sha512-LwdZHpScM4Qz8Xw2iKSzS+cfglZzJGvofQICy7W7v4caru4EaAmyUuO6BGrbyQ2mYV11W0U8j5mBhd14dd3B0A==}
@@ -217,6 +245,36 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@floating-ui/core@1.7.5':
+    resolution: {integrity: sha512-1Ih4WTWyw0+lKyFMcBHGbb5U5FtuHJuujoyyr5zTaWS5EYMeT6Jb2AuDeftsCsEuchO+mM2ij5+q9crhydzLhQ==}
+
+  '@floating-ui/dom@1.7.6':
+    resolution: {integrity: sha512-9gZSAI5XM36880PPMm//9dfiEngYoC6Am2izES1FF406YFsjvyBMmeJ2g4SAju3xWwtuynNRFL2s9hgxpLI5SQ==}
+
+  '@floating-ui/react-dom@2.1.8':
+    resolution: {integrity: sha512-cC52bHwM/n/CxS87FH0yWdngEZrjdtLW/qVruo68qg+prK7ZQ4YGdut2GyDVpoGeAYe/h899rVeOVm6Oi40k2A==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+
+  '@floating-ui/utils@0.2.11':
+    resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
+
+  '@formatjs/ecma402-abstract@2.3.6':
+    resolution: {integrity: sha512-HJnTFeRM2kVFVr5gr5kH1XP6K0JcJtE7Lzvtr3FS/so5f1kpsqqqxy5JF+FRaO6H2qmcMfAUIox7AJteieRtVw==}
+
+  '@formatjs/fast-memoize@2.2.7':
+    resolution: {integrity: sha512-Yabmi9nSvyOMrlSeGGWDiH7rf3a7sIwplbvo/dlz9WCIjzIQAfy1RMf4S0X3yG724n5Ghu2GmEl5NJIV6O9sZQ==}
+
+  '@formatjs/icu-messageformat-parser@2.11.4':
+    resolution: {integrity: sha512-7kR78cRrPNB4fjGFZg3Rmj5aah8rQj9KPzuLsmcSn4ipLXQvC04keycTI1F7kJYDwIXtT2+7IDEto842CfZBtw==}
+
+  '@formatjs/icu-skeleton-parser@1.8.16':
+    resolution: {integrity: sha512-H13E9Xl+PxBd8D5/6TVUluSpxGNvFSlN/b3coUp0e0JpuWXXnQDiavIpY3NnvSp4xhEMoXyyBvVfdFX8jglOHQ==}
+
+  '@formatjs/intl-localematcher@0.6.2':
+    resolution: {integrity: sha512-XOMO2Hupl0wdd172Y06h6kLpBz6Dv+J4okPLl4LPtzbr8f66WbIoy4ev98EBuZ6ZK4h5ydTN6XneT4QVpD7cdA==}
+
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
     engines: {node: '>=18'}
@@ -370,11 +428,352 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@jridgewell/gen-mapping@0.3.13':
+    resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
+
+  '@jridgewell/remapping@2.3.5':
+    resolution: {integrity: sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==}
+
+  '@jridgewell/resolve-uri@3.1.2':
+    resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
+    engines: {node: '>=6.0.0'}
+
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
+  '@jridgewell/trace-mapping@0.3.31':
+    resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@nanostores/react@1.1.0':
+    resolution: {integrity: sha512-MbH35fjhcf7LAubYX5vhOChYUfTLzNLqH/mBGLVsHkcvjy0F8crO1WQwdmQ2xKbAmtpalDa2zBt3Hlg5kqr8iw==}
+    engines: {node: ^20.0.0 || >=22.0.0}
+    peerDependencies:
+      nanostores: ^1.2.0
+      react: '>=18.0.0'
+
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
+
+  '@preact/signals-core@1.14.1':
+    resolution: {integrity: sha512-vxPpfXqrwUe9lpjqfYNjAF/0RF/eFGeLgdJzdmIIZjpOnTmGmAB4BjWone562mJGMRP4frU6iZ6ei3PDsu52Ng==}
+
+  '@preact/signals-react@3.10.0':
+    resolution: {integrity: sha512-Uxu6lidNVr9z27b/6DbCin86ekzHiJDrLXZii82aXSzvyMXYMr7l0Bab1cKbfWdbkxq13e7kS7paix3pjKBTLA==}
+    peerDependencies:
+      react: ^16.14.0 || 17.x || 18.x || 19.x
+
+  '@radix-ui/number@1.1.1':
+    resolution: {integrity: sha512-MkKCwxlXTgz6CFoJx3pCwn07GKp36+aZyu/u2Ln2VrA5DcdyCZkASEDBTd8x5whTQQL5CiYf4prXKLcgQdv29g==}
+
+  '@radix-ui/primitive@1.1.3':
+    resolution: {integrity: sha512-JTF99U/6XIjCBo0wqkU5sK10glYe27MRRsfwoiq5zzOEZLHU3A3KCMa5X/azekYRCJ0HlwI0crAXS/5dEHTzDg==}
+
+  '@radix-ui/react-arrow@1.1.7':
+    resolution: {integrity: sha512-F+M1tLhO+mlQaOWspE8Wstg+z6PwxwRd8oQ8IXceWz92kfAmalTRf0EjrouQeo7QssEPfCn05B4Ihs1K9WQ/7w==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-collection@1.1.7':
+    resolution: {integrity: sha512-Fh9rGN0MoI4ZFUNyfFVNU4y9LUz93u9/0K+yLgA2bwRojxM8JU1DyvvMBabnZPBgMWREAJvU2jjVzq+LrFUglw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-compose-refs@1.1.2':
+    resolution: {integrity: sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-context@1.1.2':
+    resolution: {integrity: sha512-jCi/QKUM2r1Ju5a3J64TH2A5SpKAgh0LpknyqdQ4m6DCV0xJ2HG1xARRwNGPQfi1SLdLWZ1OJz6F4OMBBNiGJA==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-direction@1.1.1':
+    resolution: {integrity: sha512-1UEWRX6jnOA2y4H5WczZ44gOOjTEmlqv1uNW4GAJEO5+bauCBhv8snY65Iw5/VOS/ghKN9gr2KjnLKxrsvoMVw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-dismissable-layer@1.1.11':
+    resolution: {integrity: sha512-Nqcp+t5cTB8BinFkZgXiMJniQH0PsUt2k51FUhbdfeKvc4ACcG2uQniY/8+h1Yv6Kza4Q7lD7PQV0z0oicE0Mg==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-focus-guards@1.1.3':
+    resolution: {integrity: sha512-0rFg/Rj2Q62NCm62jZw0QX7a3sz6QCQU0LpZdNrJX8byRGaGVTqbrW9jAoIAHyMQqsNpeZ81YgSizOt5WXq0Pw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-focus-scope@1.1.7':
+    resolution: {integrity: sha512-t2ODlkXBQyn7jkl6TNaw/MtVEVvIGelJDCG41Okq/KwUsJBwQ4XVZsHAVUkK4mBv3ewiAS3PGuUWuY2BoK4ZUw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-id@1.1.1':
+    resolution: {integrity: sha512-kGkGegYIdQsOb4XjsfM97rXsiHaBwco+hFI66oO4s9LU+PLAC5oJ7khdOVFxkhsmlbpUqDAvXw11CluXP+jkHg==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-popper@1.2.8':
+    resolution: {integrity: sha512-0NJQ4LFFUuWkE7Oxf0htBKS6zLkkjBH+hM1uk7Ng705ReR8m/uelduy1DBo0PyBXPKVnBA6YBlU94MBGXrSBCw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-portal@1.1.9':
+    resolution: {integrity: sha512-bpIxvq03if6UNwXZ+HTK71JLh4APvnXntDc6XOX8UVq4XQOVl7lwok0AvIl+b8zgCw3fSaVTZMpAPPagXbKmHQ==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-primitive@2.1.3':
+    resolution: {integrity: sha512-m9gTwRkhy2lvCPe6QJp4d3G1TYEUHn/FzJUtq9MjH46an1wJU+GdoGC5VLof8RX8Ft/DlpshApkhswDLZzHIcQ==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-roving-focus@1.1.11':
+    resolution: {integrity: sha512-7A6S9jSgm/S+7MdtNDSb+IU859vQqJ/QAtcYQcfFC6W8RS4IxIZDldLR0xqCFZ6DCyrQLjLPsxtTNch5jVA4lA==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-select@2.2.6':
+    resolution: {integrity: sha512-I30RydO+bnn2PQztvo25tswPH+wFBjehVGtmagkU78yMdwTwVf12wnAOF+AeP8S2N8xD+5UPbGhkUfPyvT+mwQ==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-slider@1.3.6':
+    resolution: {integrity: sha512-JPYb1GuM1bxfjMRlNLE+BcmBC8onfCi60Blk7OBqi2MLTFdS+8401U4uFjnwkOr49BLmXxLC6JHkvAsx5OJvHw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-slot@1.2.3':
+    resolution: {integrity: sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-slot@1.2.4':
+    resolution: {integrity: sha512-Jl+bCv8HxKnlTLVrcDE8zTMJ09R9/ukw4qBs/oZClOfoQk/cOTbDn+NceXfV7j09YPVQUryJPHurafcSg6EVKA==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-toggle-group@1.1.11':
+    resolution: {integrity: sha512-5umnS0T8JQzQT6HbPyO7Hh9dgd82NmS36DQr+X/YJ9ctFNCiiQd6IJAYYZ33LUwm8M+taCz5t2ui29fHZc4Y6Q==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-toggle@1.1.10':
+    resolution: {integrity: sha512-lS1odchhFTeZv3xwHH31YPObmJn8gOg7Lq12inrr0+BH/l3Tsq32VfjqH1oh80ARM3mlkfMic15n0kg4sD1poQ==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-use-callback-ref@1.1.1':
+    resolution: {integrity: sha512-FkBMwD+qbGQeMu1cOHnuGB6x4yzPjho8ap5WtbEJ26umhgqVXbhekKUQO+hZEL1vU92a3wHwdp0HAcqAUF5iDg==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-use-controllable-state@1.2.2':
+    resolution: {integrity: sha512-BjasUjixPFdS+NKkypcyyN5Pmg83Olst0+c6vGov0diwTEo6mgdqVR6hxcEgFuh4QrAs7Rc+9KuGJ9TVCj0Zzg==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-use-effect-event@0.0.2':
+    resolution: {integrity: sha512-Qp8WbZOBe+blgpuUT+lw2xheLP8q0oatc9UpmiemEICxGvFLYmHm9QowVZGHtJlGbS6A6yJ3iViad/2cVjnOiA==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-use-escape-keydown@1.1.1':
+    resolution: {integrity: sha512-Il0+boE7w/XebUHyBjroE+DbByORGR9KKmITzbR7MyQ4akpORYP/ZmbhAr0DG7RmmBqoOnZdy2QlvajJ2QA59g==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-use-layout-effect@1.1.1':
+    resolution: {integrity: sha512-RbJRS4UWQFkzHTTwVymMTUv8EqYhOp8dOOviLj2ugtTiXRaRQS7GLGxZTLL1jWhMeoSCf5zmcZkqTl9IiYfXcQ==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-use-previous@1.1.1':
+    resolution: {integrity: sha512-2dHfToCj/pzca2Ck724OZ5L0EVrr3eHRNsG/b3xQJLA2hZpVCS99bLAX+hm1IHXDEnzU6by5z/5MIY794/a8NQ==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-use-rect@1.1.1':
+    resolution: {integrity: sha512-QTYuDesS0VtuHNNvMh+CjlKJ4LJickCMUAqjlE3+j8w+RlRpwyX3apEQKGFzbZGdo7XNG1tXa+bQqIE7HIXT2w==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-use-size@1.1.1':
+    resolution: {integrity: sha512-ewrXRDTAqAXlkl6t/fkXWNAhFX9I+CkKlw6zjEwk86RSPKwZr3xpBRso655aqYafwtnbpHLj6toFzmd6xdVptQ==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-visually-hidden@1.2.3':
+    resolution: {integrity: sha512-pzJq12tEaaIhqjbzpCuv/OypJY/BPavOofm+dbab+MHLajy277+1lLm6JFcGgF5eskJ6mquGirhXY2GD/8u8Ug==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/rect@1.1.1':
+    resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
 
   '@rollup/pluginutils@5.3.0':
     resolution: {integrity: sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q==}
@@ -554,6 +953,100 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
+  '@tailwindcss/node@4.2.2':
+    resolution: {integrity: sha512-pXS+wJ2gZpVXqFaUEjojq7jzMpTGf8rU6ipJz5ovJV6PUGmlJ+jvIwGrzdHdQ80Sg+wmQxUFuoW1UAAwHNEdFA==}
+
+  '@tailwindcss/oxide-android-arm64@4.2.2':
+    resolution: {integrity: sha512-dXGR1n+P3B6748jZO/SvHZq7qBOqqzQ+yFrXpoOWWALWndF9MoSKAT3Q0fYgAzYzGhxNYOoysRvYlpixRBBoDg==}
+    engines: {node: '>= 20'}
+    cpu: [arm64]
+    os: [android]
+
+  '@tailwindcss/oxide-darwin-arm64@4.2.2':
+    resolution: {integrity: sha512-iq9Qjr6knfMpZHj55/37ouZeykwbDqF21gPFtfnhCCKGDcPI/21FKC9XdMO/XyBM7qKORx6UIhGgg6jLl7BZlg==}
+    engines: {node: '>= 20'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@tailwindcss/oxide-darwin-x64@4.2.2':
+    resolution: {integrity: sha512-BlR+2c3nzc8f2G639LpL89YY4bdcIdUmiOOkv2GQv4/4M0vJlpXEa0JXNHhCHU7VWOKWT/CjqHdTP8aUuDJkuw==}
+    engines: {node: '>= 20'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@tailwindcss/oxide-freebsd-x64@4.2.2':
+    resolution: {integrity: sha512-YUqUgrGMSu2CDO82hzlQ5qSb5xmx3RUrke/QgnoEx7KvmRJHQuZHZmZTLSuuHwFf0DJPybFMXMYf+WJdxHy/nQ==}
+    engines: {node: '>= 20'}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@tailwindcss/oxide-linux-arm-gnueabihf@4.2.2':
+    resolution: {integrity: sha512-FPdhvsW6g06T9BWT0qTwiVZYE2WIFo2dY5aCSpjG/S/u1tby+wXoslXS0kl3/KXnULlLr1E3NPRRw0g7t2kgaQ==}
+    engines: {node: '>= 20'}
+    cpu: [arm]
+    os: [linux]
+
+  '@tailwindcss/oxide-linux-arm64-gnu@4.2.2':
+    resolution: {integrity: sha512-4og1V+ftEPXGttOO7eCmW7VICmzzJWgMx+QXAJRAhjrSjumCwWqMfkDrNu1LXEQzNAwz28NCUpucgQPrR4S2yw==}
+    engines: {node: '>= 20'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@tailwindcss/oxide-linux-arm64-musl@4.2.2':
+    resolution: {integrity: sha512-oCfG/mS+/+XRlwNjnsNLVwnMWYH7tn/kYPsNPh+JSOMlnt93mYNCKHYzylRhI51X+TbR+ufNhhKKzm6QkqX8ag==}
+    engines: {node: '>= 20'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@tailwindcss/oxide-linux-x64-gnu@4.2.2':
+    resolution: {integrity: sha512-rTAGAkDgqbXHNp/xW0iugLVmX62wOp2PoE39BTCGKjv3Iocf6AFbRP/wZT/kuCxC9QBh9Pu8XPkv/zCZB2mcMg==}
+    engines: {node: '>= 20'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@tailwindcss/oxide-linux-x64-musl@4.2.2':
+    resolution: {integrity: sha512-XW3t3qwbIwiSyRCggeO2zxe3KWaEbM0/kW9e8+0XpBgyKU4ATYzcVSMKteZJ1iukJ3HgHBjbg9P5YPRCVUxlnQ==}
+    engines: {node: '>= 20'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@tailwindcss/oxide-wasm32-wasi@4.2.2':
+    resolution: {integrity: sha512-eKSztKsmEsn1O5lJ4ZAfyn41NfG7vzCg496YiGtMDV86jz1q/irhms5O0VrY6ZwTUkFy/EKG3RfWgxSI3VbZ8Q==}
+    engines: {node: '>=14.0.0'}
+    cpu: [wasm32]
+    bundledDependencies:
+      - '@napi-rs/wasm-runtime'
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+      - '@tybys/wasm-util'
+      - '@emnapi/wasi-threads'
+      - tslib
+
+  '@tailwindcss/oxide-win32-arm64-msvc@4.2.2':
+    resolution: {integrity: sha512-qPmaQM4iKu5mxpsrWZMOZRgZv1tOZpUm+zdhhQP0VhJfyGGO3aUKdbh3gDZc/dPLQwW4eSqWGrrcWNBZWUWaXQ==}
+    engines: {node: '>= 20'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@tailwindcss/oxide-win32-x64-msvc@4.2.2':
+    resolution: {integrity: sha512-1T/37VvI7WyH66b+vqHj/cLwnCxt7Qt3WFu5Q8hk65aOvlwAhs7rAp1VkulBJw/N4tMirXjVnylTR72uI0HGcA==}
+    engines: {node: '>= 20'}
+    cpu: [x64]
+    os: [win32]
+
+  '@tailwindcss/oxide@4.2.2':
+    resolution: {integrity: sha512-qEUA07+E5kehxYp9BVMpq9E8vnJuBHfJEC0vPC5e7iL/hw7HR61aDKoVoKzrG+QKp56vhNZe4qwkRmMC0zDLvg==}
+    engines: {node: '>= 20'}
+
+  '@tailwindcss/vite@4.2.2':
+    resolution: {integrity: sha512-mEiF5HO1QqCLXoNEfXVA1Tzo+cYsrqV7w9Juj2wdUFyW07JRenqMG225MvPwr3ZD9N1bFQj46X7r33iHxLUW0w==}
+    peerDependencies:
+      vite: ^5.2.0 || ^6 || ^7 || ^8
+
   '@types/debug@4.1.13':
     resolution: {integrity: sha512-KSVgmQmzMwPlmtljOomayoR89W4FynCAi3E8PPs7vmDVPe84hT+vGPKkJfThkmXs0x0jAaa9U8uW8bbfyS2fWw==}
 
@@ -578,12 +1071,404 @@ packages:
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
 
+  '@wix/analytics@1.15.0':
+    resolution: {integrity: sha512-zkvVsNOqmUtb3+AFiu9bBCFrvVSvpvYrWS/UR+EKCw6JsjBb54DHMiSMO4pL0wCyjF2098SWC5apzVJkYyuY/Q==}
+
+  '@wix/authentication@1.13.0':
+    resolution: {integrity: sha512-Hfbrgovk3+fxz+94fOHkhK9nP6iKi32QWdViFWzEb3URxM0FmRprOYkbKB8Z1cz+CAIsnOYQ2zuaPjad6hXdEQ==}
+    peerDependencies:
+      '@wix/sdk': ^1.21.2
+
+  '@wix/auto_sdk_bookings_availability-calendar@1.0.188':
+    resolution: {integrity: sha512-ptFeseVcCy9iVYCaU9T1uLx/rwt5keeLiUppC9EFCDA9k2BY4vLNKZV933zhG0iXhjSOXIIK8i+LbKSHzI7UUw==}
+
+  '@wix/auto_sdk_categories_categories@1.0.107':
+    resolution: {integrity: sha512-vEa/84uZKUL2hGggAVwztJ+O85zoxwvSKAWK6gD588wSVO5QkeTg4Gs/X6DWo7zyjkWg4QgwprYOTUuEL4wbQA==}
+
+  '@wix/auto_sdk_ecom_abandoned-checkouts@1.0.72':
+    resolution: {integrity: sha512-G1kF2RWd7CEhmsiVP7nHgXkp0avL3GlU9wnzMluP6w7JpScFLEWkdds8FrTmZh7xjALe+hCTVkhhKiH0fUvSzg==}
+
+  '@wix/auto_sdk_ecom_additional-fees@1.0.43':
+    resolution: {integrity: sha512-GjPBCOhphae/BamFwsHUMUJU/B/ZPvkdFV1q7of4ne5pbT9gziPkjMjBU3imh476uHC0aTuaIgGRwA5pVp+DWQ==}
+
+  '@wix/auto_sdk_ecom_back-in-stock-notifications@1.0.59':
+    resolution: {integrity: sha512-TZbR25MRtk16oINyDxz2MIaUn+VdzBoFgmT0q0VSAEN0+Fuggn+uqg8q+iB3Y5dHQNydmU0sm7yXfGDzbkmq8g==}
+
+  '@wix/auto_sdk_ecom_back-in-stock-settings@1.0.39':
+    resolution: {integrity: sha512-8us0Q4w14ffnOiaLdFtU3okLQz59qgMQ9PTGMjaaVHx8mpXvWZDZcLDMtMqdqsrtekNsL/OIc8BxkgXLyNkcxg==}
+
+  '@wix/auto_sdk_ecom_cart-v-2@1.0.124':
+    resolution: {integrity: sha512-fxUvcREeVPeromcaPXnAdV31RZ6JUEiLHiH1lZHxlNTyZ4Gj6ttqHFeVx6UF0YtxbB/TJgOeCVnSh0uzVlpung==}
+
+  '@wix/auto_sdk_ecom_cart@1.0.148':
+    resolution: {integrity: sha512-FIOrvD2DtrbVObxOhD5kKgg7HFdtlzEzNFvIbNet75qjKe7GxiIFDZnqmk8s0KqZ/ukHOvuQjxXAM0E9yogGYA==}
+
+  '@wix/auto_sdk_ecom_catalog@1.0.57':
+    resolution: {integrity: sha512-6qbyVdgMlENHSlpUmePwRhTF1RcayhkWCUj1xmXiIb5DzkGWuLDgasF46MLTWEkUuKXfsLhkIS4+DncGpHRzLw==}
+
+  '@wix/auto_sdk_ecom_checkout-content@1.0.34':
+    resolution: {integrity: sha512-ZL/yuf5wI4+YNWb9oqhaCBC9CNPEsv9F0woqcd3IB3uoH0V/BiJq4HJvzq9QJpv50MpE31ffFzEbhK0d0QTUfQ==}
+
+  '@wix/auto_sdk_ecom_checkout-settings@1.0.62':
+    resolution: {integrity: sha512-nqoAPYvFco4O5GSgeHPjBwBvwcL/x32Hiud//nmFNY+zkZvjz9vA5Mp3okBAJFbcfNLiTbSzBJJwJjhNUoyE8A==}
+
+  '@wix/auto_sdk_ecom_checkout-templates@1.0.128':
+    resolution: {integrity: sha512-mpSYE3lT16FRiT4jxYUEO+EnC9oqD+SiIjnHgj0hUDUhJLCQw/KTTVDCyMU8Cm0qXmuS0VzILJxz1Ac5ObQP8Q==}
+
+  '@wix/auto_sdk_ecom_checkout@1.0.142':
+    resolution: {integrity: sha512-AoJlW3QfQ8DNe18MRGiYRBahXxoey0ocU/Y7oGp57VqKjORIWhTJ9gN7+H9xXfqr6LEq/MMPOpt99A/F5fUR/g==}
+
+  '@wix/auto_sdk_ecom_currencies@1.0.33':
+    resolution: {integrity: sha512-GGlJ58rWrnBm808dZpX9u7fEkS3nUjWciv2G5zbZIZoKXpk99coNWX9VNwDMbFWvDU9nzvzHOPEYoy0PnKXIUg==}
+
+  '@wix/auto_sdk_ecom_current-cart-v-2@1.0.124':
+    resolution: {integrity: sha512-CVodbcirvag6QEgYr3xEv8bdAFiKruwoQPf/w11u/9bysr9UmCgg574QaaE84LBJNQ5/UABWCoc2F01Bdj7EUw==}
+
+  '@wix/auto_sdk_ecom_current-cart@1.0.158':
+    resolution: {integrity: sha512-7f+4dt+z1wJ8FDrz+6nJuCceT/wuYHE7SlFm4NtOHzjr/B81zgXquR6j+hThdZvbqF8xuROx8LXFlb1uWWQStg==}
+
+  '@wix/auto_sdk_ecom_custom-triggers@1.0.35':
+    resolution: {integrity: sha512-j7q0btVqPaeLj0wRhZAJwsU5VLHGlyfh6Cvz2LzohbFzktjdlGTs7QlLuQ6B6KSsIzORSM8T1iPaEpXFW+EVxQ==}
+
+  '@wix/auto_sdk_ecom_delivery-profile@1.0.383':
+    resolution: {integrity: sha512-Bxw2akFqkAcH/0XDFsIA2GWSW9K5YC6SFg8Ti4spn9NXgfa2XLK6SnLPWy8Sz6w51lU6XvjWpDyV98pifb72Og==}
+
+  '@wix/auto_sdk_ecom_delivery-solutions@1.0.56':
+    resolution: {integrity: sha512-w1GjVlNMEd7bw7bXV4xbtLDi3NaExFwmo76I003B30rzBbZO/G6Qe2a0MpOs7D7k+lZgmgkcuXYks7jmCtejYw==}
+
+  '@wix/auto_sdk_ecom_discount-rules@1.0.106':
+    resolution: {integrity: sha512-7qUCu1h0X67BPMGH8ld2FFyrbSlRGjXunnB+4DbN/TODdAtv40j1HWTuzB8oYuXNMqx8iSH3s5NSeIa/LW+djA==}
+
+  '@wix/auto_sdk_ecom_discounts-custom-trigger@1.0.41':
+    resolution: {integrity: sha512-aJo21HjtyGAchKgCvGEwIlueft+bRB17EBQOGUTlnu4Ycm6rHj/4dxd7xXgOoCmIul4GHrcOOcMOpf7AMg0i1w==}
+
+  '@wix/auto_sdk_ecom_discounts@1.0.32':
+    resolution: {integrity: sha512-J6daoSgiZpDf16YWPpPbQhmkIpYZ2RfFXe5mM0NM2oyWa76Wmb/cBFVep4GP2IB7ETVXC57Fir9I1xGNQsOMew==}
+
+  '@wix/auto_sdk_ecom_draft-orders@1.0.143':
+    resolution: {integrity: sha512-9bq+S1Sr9PU2pdG1rA0STmaoJugMIkdptMRWxIsZGjM04SRXWCKHJB5zs4Cy7wkp9SNc/kvTR1rnjZmc/bkJSA==}
+
+  '@wix/auto_sdk_ecom_ecommerce-settings@1.0.22':
+    resolution: {integrity: sha512-xhM1gxdtKw/vDcqHcBvq4iZ3ewwDmq9yoGoLEQEzI8T93RHGN0m6U3xmE7rzjjwHi0FjWCtPHt8erUsn3iYXEg==}
+
+  '@wix/auto_sdk_ecom_gift-vouchers-provider@1.0.31':
+    resolution: {integrity: sha512-nMe9Fs+TOAN+zngq+mqRHWNhNtmPJSfXVI2It0Pr4ZLfuCAAiPYhmrxya1IfWr/2Ez6QGjOj4rRKcQEWx3ooeg==}
+
+  '@wix/auto_sdk_ecom_gift-vouchers@1.0.41':
+    resolution: {integrity: sha512-asRFeXuefC5amocLgnTf+oxKLDBP7slh+17P1CAZs6TAoIVnjgeRdDWx2ZnB6w/awRIye/ItEtUFa2M0twzTvg==}
+
+  '@wix/auto_sdk_ecom_inventory@1.0.22':
+    resolution: {integrity: sha512-cC6Lwm5BUcz6IkQOGAvYX7PAfMINsPkQQMtwIBUCuCVZ9AcNC1y0qJGaqipAn4Rwgef1t8m1gXQm+IFJrKS8uw==}
+
+  '@wix/auto_sdk_ecom_local-delivery-options@1.0.49':
+    resolution: {integrity: sha512-ElvA+vUhdy8h7+VTZB/UC5lxjA5w+6Won65UfnTsAlpCHIvCedyQWzMIuYF6vI2IA3kWUiba5YkcRpOx909IgQ==}
+
+  '@wix/auto_sdk_ecom_manual-tax-mappings@1.0.34':
+    resolution: {integrity: sha512-o2tA75D/MCrUrDtMz6D4t43DjipTt22qhRKp5ZpSaBqh/xEzM7uIeYu77MWDI7l0Ssup2DVf7Ajn7XhS+w0klQ==}
+
+  '@wix/auto_sdk_ecom_memberships@1.0.34':
+    resolution: {integrity: sha512-g65qvRzY09jprmjo8hSVDmT/OFrTVNaikUAXJzH3SKKdJayG1O9rycBz8RKTl1Aw2FC0VyPcAaB+YJyRctbx3w==}
+
+  '@wix/auto_sdk_ecom_order-billing@1.0.69':
+    resolution: {integrity: sha512-NLJ9JWoEsmY2PahtTlJGHVe+3E8LyLwls9CpFZ0Y20i7PQHjGi/ws1O2Rda6DQld8Pdd02BxjyCljU3vMEAvAQ==}
+
+  '@wix/auto_sdk_ecom_order-fulfillments@1.0.57':
+    resolution: {integrity: sha512-XrjV+gOqvrAOd6WHA6zfxav/KvUaF0v1+Aau/U3do11rlzR1qwLJ86K8AGLWiUC9TrPWBKwFLd32chMErALxyQ==}
+
+  '@wix/auto_sdk_ecom_order-invoices@1.0.49':
+    resolution: {integrity: sha512-56fz12gVhKRcu6dZDiyKcUhqjNeKCPLYqUQAFVWVuhMiPA16SdOiHzwBSaYcE+l4sg6E+XK/bczIGMSuLWAkMw==}
+
+  '@wix/auto_sdk_ecom_order-payment-requests@1.0.56':
+    resolution: {integrity: sha512-B0k5JUTj5mpOZ7MALv7RXpKneUkNRsjCJlm9hNzQQx3V5raj7ibX/COp43zz9Y019AqaALqK6vJiqQcYADgsmg==}
+
+  '@wix/auto_sdk_ecom_order-transactions@1.0.82':
+    resolution: {integrity: sha512-piSVpSoUMt0FV+78GBGxoP5RAALua7+jj/xr+TWy8n992HsL0Ya2s41oUFon5hUJQmSV4CGP2Q8BMB7E1qY7uA==}
+
+  '@wix/auto_sdk_ecom_orders-settings@1.0.51':
+    resolution: {integrity: sha512-CTY5/zKthT2DL34VcQzSRzRiqit+Cvfyxm1m5uIsSnqiH6GlleqkKTXGfA2LX9U7L/mgHBYxCXfVLBhIxKRHWw==}
+
+  '@wix/auto_sdk_ecom_orders@1.0.236':
+    resolution: {integrity: sha512-eQrErybqDSkIY82+zyRLW3iM8ZrpV27fiHpBkXqPh3AL9p3+FSad/UnEJQQtSPaOoLWDIAi7TDYNUPNdqFrQOQ==}
+
+  '@wix/auto_sdk_ecom_payment-settings@1.0.119':
+    resolution: {integrity: sha512-cipLNCY5ALPuXKCy14+bVToWpYAYpmIJ7CGCk0aiC/Xm9VTUhEc3gKT3wFj0lqxKo4Mkk1T64MVapaH9jchLgw==}
+
+  '@wix/auto_sdk_ecom_pickup-locations@1.0.47':
+    resolution: {integrity: sha512-Tk4fNG/nbMivSGCkqrbj9j84Fdjee5J2M/San9/bpKd+wMmx0jLCzWVCsY6ChNsCfJ8a7GGbZRwoa0j+FgeoOA==}
+
+  '@wix/auto_sdk_ecom_recommendations-provider@1.0.31':
+    resolution: {integrity: sha512-JdkFMnZsBzZfXnUoz+KEcVVkhzJ5YUqV6uXI5lcO9eBPm7D4UVHLCBqwRzxv/Dcqq2aOR9Hb+GR55/zyG7yo8w==}
+
+  '@wix/auto_sdk_ecom_recommendations@1.0.44':
+    resolution: {integrity: sha512-KcRRrvJHOu15YkQdfSlOzVLJPeI39AuEs8L/qkGVcAifhkgXwv8Ei1tl2kl6+f+xVN7b9kLYqUfX/80bM05FPw==}
+
+  '@wix/auto_sdk_ecom_shipping-options@1.0.117':
+    resolution: {integrity: sha512-9lkdC0wiYq3sdOyL8fMvaPHcmMbgiQOtLc9+p5EK+gF0SWKmdK+EgPal/W17I1B8Q3aNkq5TYTERb0ZQlUarVA==}
+
+  '@wix/auto_sdk_ecom_shipping-rates@1.0.37':
+    resolution: {integrity: sha512-jvvZMUxpWptj5WHoaejqAbevaTDV4ZLaaE4bnAsglccwt4xQOyA45chdX7u2QEpsO0FBBdh3JFcJy4xGJ/dt6g==}
+
+  '@wix/auto_sdk_ecom_shippo-configurations@1.0.65':
+    resolution: {integrity: sha512-b9c+c4kr20FOg1c+KD3ZQslP43zMm30RT5fycS6xCrwgvYxWkpTQj19U2ER5qPTj6Ir8f77s0Qr7twr2EILcGA==}
+
+  '@wix/auto_sdk_ecom_subscription-contracts@1.0.108':
+    resolution: {integrity: sha512-ZQZMkzYnbBTffwcX4vv/qMQo0v3OD/ry9y4vW1i4J8gq2uR1J2gYRJUdhCBRdBIVYBICzw4AccRsgmHiLntXBQ==}
+
+  '@wix/auto_sdk_ecom_tax-calculation-provider@1.0.27':
+    resolution: {integrity: sha512-4QVihIi3fQYBWu5jSQ6d5QSBpyJEquEwJSLm4gTiq3yjAEWUQfeznS1zw4d0oiiqjjV2QzFlOFopvYJTIsnivQ==}
+
+  '@wix/auto_sdk_ecom_tax-calculation@1.0.49':
+    resolution: {integrity: sha512-IU5WD6ZAMBXp/pacruDYlGX+fDrKg9rMYEn2LK4pNHoyXKD3GxTOSKUT2t6cQ/RcCadFANBc3j2tXUoFHg6j3Q==}
+
+  '@wix/auto_sdk_ecom_tax-groups@1.0.56':
+    resolution: {integrity: sha512-jwlKq/j0VOYfam9YtvD5qCDPyXJIyl0rAxk6XKeGdLrqzckl9K8IfTr1M4cxj+VZkCCODxGxEuCHuaeR4DtE9Q==}
+
+  '@wix/auto_sdk_ecom_tax-regions@1.0.54':
+    resolution: {integrity: sha512-0FnxNAtcJ7nhBA6XVOY+hJMh561Mo06WpsJlZ8x81aWSgDQNoJN0t9A21LiPQq8hP1lcc6X1Ltulolxax7QCDg==}
+
+  '@wix/auto_sdk_ecom_tip-settings@1.0.50':
+    resolution: {integrity: sha512-e6CZZ/DMJIY1BTcG8ow+/AfDgCnd0L0phN0DzIfBect9SHphrSD6dHcbMrvSLrmfZ5fxe1MAdeW35WGJWcqnuQ==}
+
+  '@wix/auto_sdk_ecom_tippable-staff@1.0.38':
+    resolution: {integrity: sha512-S8+afDRMPPnhX64vB8B9bHN6kObdMZBkIlwHCRgi4IGo2cTLJNdv+XDW8poA5FgQQ41nsRtbxCPFp77JPLX9Zw==}
+
+  '@wix/auto_sdk_ecom_tips@1.0.59':
+    resolution: {integrity: sha512-bEQChnu4QtW9eYCJLtpP3O9jI1oLq8IMPSPQ4XjZknHlTHz63PcPzZUR1M2dNHjGUQLxqMkHhWhcMxqhGEQUfw==}
+
+  '@wix/auto_sdk_ecom_totals-calculator@1.0.94':
+    resolution: {integrity: sha512-oXM5bpk2/ygLxlu7sMnXMJZC471aYxrpykDC6fKKb3oDhCv1VjSssfLvPqztoaTis8Xeo7jqDzSR2oetaIIdjw==}
+
+  '@wix/auto_sdk_ecom_validations@1.0.50':
+    resolution: {integrity: sha512-66oFyJs14eVJjot+eC30JTIJ4fQxkHpHgjJmcuHPG1vRfps4DTxZ5YyaoEUtcQPYeke/NNOH/nz1rbATdo3Q6g==}
+
+  '@wix/auto_sdk_headless-site-assets_scripts@1.0.11':
+    resolution: {integrity: sha512-qkcvfuLVMiY/9U1GOA3kpkHfj78NJ7q2YZZ5ROT7i0D+TeorGWbRUswzWPte6g6xcFsXB7pnzwIaFesLn1pBNA==}
+
+  '@wix/auto_sdk_identity_authentication@1.0.45':
+    resolution: {integrity: sha512-xt6o/j3xxyA1CVzui1Lng9VbFvjQPEy3q3GT0K03ywIKDqn0OtNao4X2AK922doH9obDEUF66YF/L5jV7xhWcQ==}
+
+  '@wix/auto_sdk_identity_oauth@1.0.36':
+    resolution: {integrity: sha512-Bw73PeYSEhWBB/RSCcMWykLBLQuWHOC/hnZMa9aMkMMgecfP8VptttTis0Py2ftL3WUYODfjH+e1nnJL9ZyLUw==}
+
+  '@wix/auto_sdk_identity_recovery@1.0.42':
+    resolution: {integrity: sha512-bEW+XlP+A4O4U2jPqOWkUF20eCf0Qcq0QAhQqfUjBEZNr1OgRnlFTV9r3kiLmVfGJFQFUL3FAFYt6hmaHkLFFg==}
+
+  '@wix/auto_sdk_identity_verification@1.0.42':
+    resolution: {integrity: sha512-GBvS1Nf39262rfKwTF7U4bl9vEf9gU6Cs+1HYHXAjGT2UO6GUlc2j2/iRQAdOrRGjQVZV5P+DrGTuzCmCGMnrg==}
+
+  '@wix/auto_sdk_redirects_redirects@1.0.40':
+    resolution: {integrity: sha512-rydiZ6PVRafrQtUhzz2NGpfL+2Jd8PNDhWbHRHvZpNEqF5L/0DZ50PHMvsm0Evs2jmsj4gC/xo7bbZXe0BnvvQ==}
+
+  '@wix/auto_sdk_stores_abandoned-carts@1.0.38':
+    resolution: {integrity: sha512-wnyOssIhZGhDDu3L9hF1WfOcM7Gzf/mz+iE7LKmnHxXrfxxYyeBl7wG7xdQo10i9R8SIgvuC56ledQAd+TAuJg==}
+
+  '@wix/auto_sdk_stores_brands-v-3@1.0.70':
+    resolution: {integrity: sha512-gN5dy0kEypKaPdDUwxyK3WIRw/9iJ8uzDeefnjBrX21IH6PB2uvwWGWAXWYPy6FNyZcFNaAJnSLKABgIyvi8Uw==}
+
+  '@wix/auto_sdk_stores_catalog-imports-v-3@1.0.49':
+    resolution: {integrity: sha512-WpVjbf6bHEx7NeMGNFuXSFlKJac3DZ9S5H5mzqxZRvrKwj1XczfU1DJ/ZHBr394iZHZarsAyvjFzo/fu5NrNsw==}
+
+  '@wix/auto_sdk_stores_catalog-versioning@1.0.60':
+    resolution: {integrity: sha512-9j7c2NaUcNUzqvIZib/6U77tIIbVcNbjOLsIlrvr9CGADUz3l0nA0xfYiQOiC0a8PIRBPIFcAXV36ZE/+7GHNA==}
+
+  '@wix/auto_sdk_stores_collections@1.0.36':
+    resolution: {integrity: sha512-QABFx3Ih0+wItWT5zJ9JQBSZ3uWSXPYypM2dBLuJJcby3x3XBYoIhtjfvQduiPaT/EpvEPtkQAxybt8YDIHuug==}
+
+  '@wix/auto_sdk_stores_customizations-v-3@1.0.75':
+    resolution: {integrity: sha512-JW06Rctz2G9rWY9elaxazP081wTBDl6xC57INKadIyyVx59iQ/gPYzdksb9Dcd2tYZXfSYEr/2QJBBEwG0lBwg==}
+
+  '@wix/auto_sdk_stores_info-sections-v-3@1.0.86':
+    resolution: {integrity: sha512-zt9lxAVF0lakQLzQgfRDJSRh+4K6d5YiJ6mEXWv2VT92yzuASHqK5Ca9Z2WFfFZEDTF3EUsMKPgS1lX1AkcrPg==}
+
+  '@wix/auto_sdk_stores_inventory-items-v-3@1.0.77':
+    resolution: {integrity: sha512-4s0ujBTCdPfnmvcd5iZGn2hpmbGyu5ON4DORZG+tEfkfi9AfT3ocNRkd6QYlyEZR3QWbHrqRnvpZyXdTj+9NRA==}
+
+  '@wix/auto_sdk_stores_inventory@1.0.59':
+    resolution: {integrity: sha512-ovKhjmquxNiD7Stof6loBrQj9UqxAyrr0ZgNZY+dt0twTkPAGARwjUn9y3zfKp15Rfto5LH0/ikzurq58RtFWQ==}
+
+  '@wix/auto_sdk_stores_products-v-3@1.0.163':
+    resolution: {integrity: sha512-Gc+ryhYdRESb1Wydp4J9TLFs5kENo/avKdBHUFieg0ZTtZ5Ro+eMUKVH4brJ0ONeWIBe7TB8EhC7Z47hHh3/yA==}
+
+  '@wix/auto_sdk_stores_products@1.0.79':
+    resolution: {integrity: sha512-5CZFDdusBj0n6OFxH+85OqdqGg3dhv1SG768hc+eqpvDqenzQjIWqRdI/rIS0ahdTv/dMp9fUdln8RsJNZYUxw==}
+
+  '@wix/auto_sdk_stores_read-only-variants-v-3@1.0.109':
+    resolution: {integrity: sha512-S5Gk1Perjn1SdUYqhQdqFdK6eeSiDJgaBAh6YOLr8IOTJVA9ugG+jhT5ui3mGZFcKUPeoLXe/h+uw0UO2e3EdA==}
+
+  '@wix/auto_sdk_stores_ribbons-v-3@1.0.51':
+    resolution: {integrity: sha512-L/mlGpkTblw4voB95R0wAo3ngwpheKEiEaUSWu0nR91FZSlaSv/wTdbkQR4rHlehNdSQsLh3mkIulkHkqLYn6w==}
+
+  '@wix/auto_sdk_stores_stores-locations-v-3@1.0.47':
+    resolution: {integrity: sha512-vqkB3Iz6uCbpBUMCZwTFQcFoy1b6THUeqLhi6eTYUxOecvWHV9eLEu10STPK3NMQxAx8Xt7uWPxQbbVx6BF4eA==}
+
+  '@wix/auto_sdk_stores_subscription-options@1.0.55':
+    resolution: {integrity: sha512-6s0pZ0GB5y1jh+BVj/sAug986RN6g/Ic3bnlXAmJtUn4hnUfo3RomKIoilYehkuFoTl3VnM0nvVh9Hpc0l8MQQ==}
+
+  '@wix/auto_sdk_stores_wishlist@1.0.34':
+    resolution: {integrity: sha512-DsXE2zSk6aCXzuHqcknocfrG1DJ9qv4/upjmxM4XP7d+MdwHxSeEWIqn1ez2weWCZjRsnzKofNtFJzMMz6wmmg==}
+
+  '@wix/consent-policy-manager@1.15.0':
+    resolution: {integrity: sha512-XIQeVkNYEdCmAA/jLVTFxzZ7E6lwHbd17HecHZaeCcWjZwVoGuFPlH4mAs4sdrUisMGxe3MJhIHWsoGZ3nBwmA==}
+
+  '@wix/ecom@1.0.1996':
+    resolution: {integrity: sha512-dKokokso67/cIlOPidM1r/ki5LrCVm/3/28G2nNyWTqMAeidykMVp+z90rvtRqgKxnRfW9fi77C88bwefckiXw==}
+
+  '@wix/ecom_app-extensions@1.0.100':
+    resolution: {integrity: sha512-9sMj5gf2hXjwAfxKggu+DeIhUAPLh/2QYNJi9F6Cc74i6jJvGAro/VdS6yca9ftvbTvqcW8gQWETT6ciY9IcFg==}
+
+  '@wix/error-handler-core@1.19.0':
+    resolution: {integrity: sha512-FHgEBgfn9qLTbh9qif3Ql+gpBDsjzGpmlou1Xrre2s/fVkNFUQFvWKZPomuEGR+eVDw8l8ovMbnNfeKlu/g+DA==}
+
+  '@wix/error-handler-types@1.19.0':
+    resolution: {integrity: sha512-3z9eURV+VfhNp7tQ7FLOzjbkRvxRJt8bPkq0F9qrGj3/p6VUHB82PStdhPQgJRbqzYrgeiMKu1dQLN/9RXXq1g==}
+
+  '@wix/error-handler@1.67.0':
+    resolution: {integrity: sha512-mPxbFCArcWr7EJjG0U+MytzgH1Xvw0Y97wpgc5iL1d+LzH+I/SceeLPiq62rIXnSkfOxBxgXbJpD9ohuoSHgiw==}
+    peerDependencies:
+      '@wix/fe-essentials': ^1.233.0
+      i18next: '>=19.9.2'
+      i18next-icu: '>=2.3.0'
+      intl-messageformat: '>=7.8.4'
+    peerDependenciesMeta:
+      '@wix/fe-essentials':
+        optional: true
+      i18next:
+        optional: true
+      i18next-icu:
+        optional: true
+      intl-messageformat:
+        optional: true
+
+  '@wix/essentials@0.1.28':
+    resolution: {integrity: sha512-uAB9xpwqebaIrdgPD9YsdZA8XSqWEJvtLT4HKSpuWmSmtLZBRYb+8U0D6NfY5grVw1qYzw0Z4XaGdeM2LLyuuw==}
+
+  '@wix/headless-components@0.0.0':
+    resolution: {integrity: sha512-Ny+mygXkuSPPRuLtvpA0cfau7oChp8uD5mrvuvQojkLNmTcuVKAJQg5gKDMBnPxq3rvvVqqewYDxHWNfTfK8YA==}
+
+  '@wix/headless-ecom@0.0.41':
+    resolution: {integrity: sha512-YYZZtCLvY+2vcS0FxSJuuro8aWF8jnINHQRafxYwkZXQNvPMbewKpx1MF97/UiSaGyeSCJyZZoOTdSldEo7Vtw==}
+    peerDependencies:
+      '@wix/headless-components': ^0.0.0
+
+  '@wix/headless-ecom@0.0.45':
+    resolution: {integrity: sha512-CRbvUajeMijIitfPMCgOEPLJtBe8ry5ePD4PF9wTiUjFrHR+Ybz0u8wd9zomnH910zLFWdBcfIBqxFboBIP8aw==}
+    peerDependencies:
+      '@wix/headless-components': ^0.0.0
+
+  '@wix/headless-localization-utils@1.0.13':
+    resolution: {integrity: sha512-4XEiKy50axb32AsDY4iYtNNsiquz6+/3ocn+eidmvv8pDSpB0K7KUqcA05TTPfdVh8/zvou7ASGC2g0bP9KhWg==}
+
+  '@wix/headless-media@0.0.21':
+    resolution: {integrity: sha512-7o9ctPfQsQwfLwLCjs4RDO9Ns900Hv+BNVc301tShulKeitxgMKTrFqUxCsCuSQqqgQYaOhm5hDB+994LtBozg==}
+
+  '@wix/headless-media@0.0.25':
+    resolution: {integrity: sha512-qxS7892M8cr2y6Pata1laHmQDCXeF5SAepB2csxTvCk/bYzFsp7gJOTYwjVqKnZP2O28RW/JO8F00nkKwP1/NA==}
+
+  '@wix/headless-node@1.38.0':
+    resolution: {integrity: sha512-yWKQJzhpQ9dYAVu9+ErBMnrMS+6HVPmIlyQspFzkjfJI+m6DGa4Tp3g0GXpHOycJ4gyjTxJ1zZWd3rFFVOzQOg==}
+
+  '@wix/headless-site-assets@1.0.11':
+    resolution: {integrity: sha512-SDd98BZSCQ9rkDwDQU7Xijp/w2I7oB2BZTfk/OwL390AdZ3xbu7BfhufMcFy1iCk2tq59KIw8bbtd+e6iEXtUw==}
+
+  '@wix/headless-stores@0.0.117':
+    resolution: {integrity: sha512-IBM0QvCRy6pwph1aXc5jxqlwcSg4ATzTY3URo68gADgnS8wrLvDghibs7VTZULR7dQBK2wMWnvTfJ3EyliUqUg==}
+    peerDependencies:
+      '@wix/headless-components': ^0.0.0
+
+  '@wix/headless-utils@0.0.0':
+    resolution: {integrity: sha512-Pz4UZfMRCTfHf/nRmJ20vVVVPzjcz6VuiRpTzBgsjML9fI/ulviR6oV0ZAReMiyflptqGGl0PU/pTrj/fnhcow==}
+    peerDependencies:
+      react: '>=16.3.0'
+
+  '@wix/headless-utils@0.0.12':
+    resolution: {integrity: sha512-CY5L2/KftFNvoCBzx68MJ2lhSlkjNNBrTXDAhg/fom5PORCruJAoRit4HuIK4u19pUWXkp7QLrhiQKapf1wucg==}
+    peerDependencies:
+      react: '>=16.3.0'
+
+  '@wix/identity@1.0.194':
+    resolution: {integrity: sha512-/ol/AfFXMb1mGnfYjvw3GA8uqPwRykP8w1VoMO7AswAt++sdSJQNvBGmhD1lumJr+DrheXDe7edWEL8XjxIFjQ==}
+
+  '@wix/image-kit@1.121.0':
+    resolution: {integrity: sha512-jOMnUDr9R+6O2cyGdbKYUcInMQ3UEwE4ImS36UhgnLD8ueMIYRuCuEKhdYDROg3N9CFY/cC2FiaCbfpPxp/dQg==}
+
+  '@wix/monitoring-common@1.11.0':
+    resolution: {integrity: sha512-K5CA286K3f3nDdnl6YUdk1vLvM7xqYLdRTuJ3S7Mxrum/WTMNXRzM1G7PxYB/+7beasUShXLQO6kkCbfPUTEIw==}
+
+  '@wix/monitoring-types@0.12.0':
+    resolution: {integrity: sha512-nlv4jwQMewjzPIWFF9rnKf9WhVojj67oLtvilYXfi+lnhXyVlYOfqCnL3qLJuKtJ6wT5XIJdt0Fj0su2NM5taQ==}
+
+  '@wix/monitoring-types@0.15.0':
+    resolution: {integrity: sha512-389NNLF0IBBBbYb6ksSgeXEQlTvLoyWg57gauxLNXOIgaLntYy3forKEjOSJGHf0rzOKMylYVyzZoh8XJ5Ov3Q==}
+
+  '@wix/monitoring-velo@1.20.0':
+    resolution: {integrity: sha512-sUmsUUeclAAzZSYqLEDYZGfqb7sAu/KXuiJ9O+gk+6PbJRnk0vSI5mW64Z2BsCguNlQXBgANeXAtQ/t/FW5Nsw==}
+
+  '@wix/monitoring@0.21.0':
+    resolution: {integrity: sha512-2KC4ZuJE4abToc2QelY7Bv99BOfbvZiAK8PY5090iP4YVGM9t+VgUdg8H6l94Q0bF/vF44dcA9rjFiEcUz4K7g==}
+
+  '@wix/monitoring@0.24.0':
+    resolution: {integrity: sha512-irN5VVAotAQet+yeX7rZGQ9OtAGJ4It4TR4PAnb3GNMM09UeX4aIXVwEYfM1bUY5zPsy2H5NDXhQjQWhgQ/x/g==}
+
+  '@wix/multilingual-manager@1.9.0':
+    resolution: {integrity: sha512-z4JD3bbgkl1HNMvVYbABC0FBztW4vj2ECn9se7Zm5j2xNWkfB6uu4UZS+wxVxOHbuIwCqCBoJTCzBP4RExj5Qg==}
+
+  '@wix/redirects@1.0.112':
+    resolution: {integrity: sha512-8zZxYG3HR1qdXTdhkau712SbPCOuZqBsnvkc+/UfDEYmm0wArQZEuJuFNAKLDqM3b+lfpz6o/73hEmqDVcjCSw==}
+
+  '@wix/sdk-context@0.0.1':
+    resolution: {integrity: sha512-ziSzrceUC0KFn4IJIVBn1cXXKrZ49ZKG5tQ6fl+TpontyUw5p/Z4VofFUUsnqNl9JYCpYNTzIXpzwok93Vrl8A==}
+
+  '@wix/sdk-react-context@1.0.2':
+    resolution: {integrity: sha512-dX1A+IlLVzsW0pE7ZyhtJHNEeeCYnu/suELnHm4FrxX5alJl1JaEpHbvjuaCt6kD/kDP1iIu9Pu6AvyJUCtYrg==}
+    peerDependencies:
+      react: '*'
+
+  '@wix/sdk-runtime@0.3.62':
+    resolution: {integrity: sha512-5imt9mSEaceX365iLGzMJ7jS4qr4lJj+2DZox86Ge8P7V9IeuPYLsQ+0PN9wN6XgMfjNLHt4G6hJUIi3bdglGA==}
+
+  '@wix/sdk-runtime@1.0.10':
+    resolution: {integrity: sha512-JB5Lqg4o6dmqEUVpGZkTNHTK6Th71A+ydUbCebVkRHut+QQQjqD/QPbxQLtWVWuqt9oItr9klJ4B5kENNuKz8w==}
+
+  '@wix/sdk-runtime@1.0.11':
+    resolution: {integrity: sha512-XGf6LCjaM66cneuOKeg/ZlGDGHgaO5vljGq3mO1zwb0HwLOCzyo85YYI69Vzgu5mPs2hP5bS7qVVAF/tv0PDkQ==}
+
+  '@wix/sdk-types@1.17.6':
+    resolution: {integrity: sha512-vYy0cDuhZrF27rJTeQ+V1YpinmrLJqRqS6Woluf/ICP8WqqaSGQwtwBV6HC7bTrDAkQgTUUDfKxOCAKiMs8HjQ==}
+
+  '@wix/sdk@1.21.5':
+    resolution: {integrity: sha512-5cVB9H2RZXA87y3fu5rvQFg5Zu8uE5QV7KPNZIyr92Oi1DnMmwBemZF6wCqFR8DqAn25RMPT9aqYI/OfxwJjVw==}
+
+  '@wix/services-definitions@1.0.1':
+    resolution: {integrity: sha512-vvvBCxw75LtQd43HOUCywMntpy+VcqKGUiUHKdKVoxXRsPZMXHpZMi8l7H/cn2T2vInzUTvyDP90kCgs8zu36Q==}
+
+  '@wix/services-manager-react@1.0.4':
+    resolution: {integrity: sha512-sQ3xzoKRJdwsKeQkmRemxO0NqvY8JGsqaJm2ug8ld67cuS+BZXyhgh6Avs27A2IwOmwiI2Rvr4NuNcGg7sEC2w==}
+    peerDependencies:
+      react: ^16.14.0 || 17.x || 18.x || 19.x
+      use-sync-external-store: ^1.0.0
+
+  '@wix/services-manager@1.0.2':
+    resolution: {integrity: sha512-7vY0Mt7t5xXajt4cnnALDCs8NDTw45ku6vacGj5Uo3TclS3USpz/QI9TZjAZxM1M5Q5/oPKb64sRca0WVn9TbQ==}
+
+  '@wix/site@1.56.0':
+    resolution: {integrity: sha512-3DK7v9Gl35tFELbiWt+L2+SqkStptfC9t64lDPXXIcgXH0AA3/7Eenf41RWLScxjRdC3Ephpt+ztM4qEpZGlgQ==}
+
+  '@wix/stores@1.0.742':
+    resolution: {integrity: sha512-dQkoJnoJMdazL8+n2DkPd0pxL4QWisb8CIv5jMJlcjRcUUkk0oAA58DGbreUEY92Y1Z5Y/eU3aiFT8hcpB392g==}
+
+  '@wix/stores_app-extensions@1.0.50':
+    resolution: {integrity: sha512-oZz0a2aGhX0HG6YCQqpbZEyS6/VsBcsp67AvgGbGgDND0i2X/wUuV1xkGbrpiV/8vn3QXCcamPeseJjT2tbthw==}
+
   anymatch@3.1.3:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  aria-hidden@1.2.6:
+    resolution: {integrity: sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==}
+    engines: {node: '>=10'}
 
   aria-query@5.3.2:
     resolution: {integrity: sha512-COROpnaoap1E2F000S62r6A60uHZnmlvomhfyT2DlTcrY1OrBKn2UhH7qn5wTC9zMvD0AY7csdPSNwKP+7WiQw==}
@@ -680,6 +1565,9 @@ packages:
       supports-color:
         optional: true
 
+  decimal.js@10.6.0:
+    resolution: {integrity: sha512-YpgQiITW3JXGntzdUmyUR1V812Hn8T1YVXhCu+wO3OpS4eU9l4YdD3qjyiKdV6mvV29zapkMeD390UVEf2lkUg==}
+
   decode-named-character-reference@1.3.0:
     resolution: {integrity: sha512-GtpQYB283KrPp6nRw50q3U9/VfOutZOe103qlN7BPP6Ad27xYnOIWv4lPzo8HCAL+mMZofJ9KEy30fq6MfaK6Q==}
 
@@ -696,6 +1584,9 @@ packages:
   detect-libc@2.1.2:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
+
+  detect-node-es@1.1.0:
+    resolution: {integrity: sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==}
 
   devalue@5.6.4:
     resolution: {integrity: sha512-Gp6rDldRsFh/7XuouDbxMH3Mx8GMCcgzIb1pDTvNyn8pZGQ22u+Wa+lGV9dQCltFQ7uVw0MhRyb8XDskNFOReA==}
@@ -727,6 +1618,10 @@ packages:
     resolution: {integrity: sha512-2QF/g9/zTaPDc3BjNcVTGoBbXBgYfMTTceLaYcFJ/W9kggFUkhxD/hMEeuLKbugyef9SqAx8cpgwlIP/jinUTA==}
     engines: {node: '>=4'}
 
+  enhanced-resolve@5.20.1:
+    resolution: {integrity: sha512-Qohcme7V1inbAfvjItgw0EaxVX5q2rdVEZHRBrEQdRZTssLDGsL8Lwrznl8oQ/6kuTJONLaDcGjkNP247XEhcA==}
+    engines: {node: '>=10.13.0'}
+
   entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
@@ -752,6 +1647,10 @@ packages:
 
   eventemitter3@5.0.4:
     resolution: {integrity: sha512-mlsTRyGaPBjPedk6Bvw+aqbsXDtoAyAzm5MO7JgU+yVRyMQ5O8bD4Kcci7BS85f93veegeCPkL8R4GLClnjLFw==}
+
+  events@3.3.0:
+    resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
+    engines: {node: '>=0.8.x'}
 
   extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
@@ -790,8 +1689,19 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
+  get-nonce@1.0.1:
+    resolution: {integrity: sha512-FJhYRoDaiatfEkUK8HKlicmu/3SGFD51q3itKDGoSTysQJBnfOcxU5GxnhE1E6soB76MbT0MBtnKJuXyAx+96Q==}
+    engines: {node: '>=6'}
+
   github-slugger@2.0.0:
     resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
+
+  graceful-fs@4.2.11:
+    resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+
+  graphql@16.13.2:
+    resolution: {integrity: sha512-5bJ+nf/UCpAjHM8i06fl7eLyVC9iuNAjm9qzkiu2ZGhM0VscSvS6WDPfAwkdkBuoXGM9FJSbKl6wylMwP9Ktig==}
+    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   h3@1.15.11:
     resolution: {integrity: sha512-L3THSe2MPeBwgIZVSH5zLdBBU90TOxarvhK9d04IDY2AmVS8j2Jz2LIWtwsGOU3lu2I5jCN7FNvVfY2+XyF+mg==}
@@ -835,6 +1745,25 @@ packages:
   http-cache-semantics@4.2.0:
     resolution: {integrity: sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==}
 
+  http-status-codes@2.3.0:
+    resolution: {integrity: sha512-RJ8XvFvpPM/Dmc5SV+dC4y5PCeOhT3x1Hq0NU3rjGeg5a/CqlhZ7uudknPwZFz4aeAXDcbAyaeP7GAo9lvngtA==}
+
+  i18next-icu@2.4.3:
+    resolution: {integrity: sha512-Clb5XCp416Z+BkJUTATCjmDcw2AFzSUDVLxLVK/KhtXP6TJQHrht+6MqoJU1hCpyoCBKe59wMO9pvCvYroNcKg==}
+    peerDependencies:
+      intl-messageformat: '>=10.3.3 <12.0.0'
+
+  i18next@25.10.10:
+    resolution: {integrity: sha512-cqUW2Z3EkRx7NqSyywjkgCLK7KLCL6IFVFcONG7nVYIJ3ekZ1/N5jUsihHV6Bq37NfhgtczxJcxduELtjTwkuQ==}
+    peerDependencies:
+      typescript: ^5 || ^6
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  intl-messageformat@10.7.18:
+    resolution: {integrity: sha512-m3Ofv/X/tV8Y3tHXLohcuVuhWKo7BBq62cqY15etqmLxg2DZ34AGGgQDeR+SCta2+zICb1NX83af0GJmbQ1++g==}
+
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
 
@@ -856,9 +1785,93 @@ packages:
     resolution: {integrity: sha512-e6rvdUCiQCAuumZslxRJWR/Doq4VpPR82kqclvcS0efgt430SlGIk05vdCN58+VrzgtIcfNODjozVielycD4Sw==}
     engines: {node: '>=16'}
 
+  jiti@2.6.1:
+    resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
+    hasBin: true
+
+  jose@5.10.0:
+    resolution: {integrity: sha512-s+3Al/p9g32Iq+oqXxkW//7jk2Vig6FF1CFqzVXoTUXt2qz89YWbL+OwS17NFYEvxC35n0FKeGO2LGYSxeM2Gg==}
+
   js-yaml@4.1.1:
     resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
+
+  lightningcss-android-arm64@1.32.0:
+    resolution: {integrity: sha512-YK7/ClTt4kAK0vo6w3X+Pnm0D2cf2vPHbhOXdoNti1Ga0al1P4TBZhwjATvjNwLEBCnKvjJc2jQgHXH0NEwlAg==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [android]
+
+  lightningcss-darwin-arm64@1.32.0:
+    resolution: {integrity: sha512-RzeG9Ju5bag2Bv1/lwlVJvBE3q6TtXskdZLLCyfg5pt+HLz9BqlICO7LZM7VHNTTn/5PRhHFBSjk5lc4cmscPQ==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  lightningcss-darwin-x64@1.32.0:
+    resolution: {integrity: sha512-U+QsBp2m/s2wqpUYT/6wnlagdZbtZdndSmut/NJqlCcMLTWp5muCrID+K5UJ6jqD2BFshejCYXniPDbNh73V8w==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  lightningcss-freebsd-x64@1.32.0:
+    resolution: {integrity: sha512-JCTigedEksZk3tHTTthnMdVfGf61Fky8Ji2E4YjUTEQX14xiy/lTzXnu1vwiZe3bYe0q+SpsSH/CTeDXK6WHig==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [freebsd]
+
+  lightningcss-linux-arm-gnueabihf@1.32.0:
+    resolution: {integrity: sha512-x6rnnpRa2GL0zQOkt6rts3YDPzduLpWvwAF6EMhXFVZXD4tPrBkEFqzGowzCsIWsPjqSK+tyNEODUBXeeVHSkw==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm]
+    os: [linux]
+
+  lightningcss-linux-arm64-gnu@1.32.0:
+    resolution: {integrity: sha512-0nnMyoyOLRJXfbMOilaSRcLH3Jw5z9HDNGfT/gwCPgaDjnx0i8w7vBzFLFR1f6CMLKF8gVbebmkUN3fa/kQJpQ==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  lightningcss-linux-arm64-musl@1.32.0:
+    resolution: {integrity: sha512-UpQkoenr4UJEzgVIYpI80lDFvRmPVg6oqboNHfoH4CQIfNA+HOrZ7Mo7KZP02dC6LjghPQJeBsvXhJod/wnIBg==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  lightningcss-linux-x64-gnu@1.32.0:
+    resolution: {integrity: sha512-V7Qr52IhZmdKPVr+Vtw8o+WLsQJYCTd8loIfpDaMRWGUZfBOYEJeyJIkqGIDMZPwPx24pUMfwSxxI8phr/MbOA==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  lightningcss-linux-x64-musl@1.32.0:
+    resolution: {integrity: sha512-bYcLp+Vb0awsiXg/80uCRezCYHNg1/l3mt0gzHnWV9XP1W5sKa5/TCdGWaR/zBM2PeF/HbsQv/j2URNOiVuxWg==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  lightningcss-win32-arm64-msvc@1.32.0:
+    resolution: {integrity: sha512-8SbC8BR40pS6baCM8sbtYDSwEVQd4JlFTOlaD3gWGHfThTcABnNDBda6eTZeqbofalIJhFx0qKzgHJmcPTnGdw==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  lightningcss-win32-x64-msvc@1.32.0:
+    resolution: {integrity: sha512-Amq9B/SoZYdDi1kFrojnoqPLxYhQ4Wo5XiL8EVJrVsB8ARoC1PWW6VGtT0WKCemjy8aC+louJnjS7U18x3b06Q==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [win32]
+
+  lightningcss@1.32.0:
+    resolution: {integrity: sha512-NXYBzinNrblfraPGyrbPoD19C1h9lfI/1mzgWYvXUTe414Gz/X1FD2XBZSZM7rRTrMA8JL3OtAaGifrIKhQ5yQ==}
+    engines: {node: '>= 12.0.0'}
+
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
@@ -1017,6 +2030,10 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nanostores@1.2.0:
+    resolution: {integrity: sha512-F0wCzbsH80G7XXo0Jd9/AVQC7ouWY6idUCTnMwW5t/Rv9W8qmO6endavDwg7TNp5GbugwSukFMVZqzPSrSMndg==}
+    engines: {node: ^20.0.0 || >=22.0.0}
+
   neotraverse@0.6.18:
     resolution: {integrity: sha512-Z4SmBUweYa09+o6pG+eASabEpP6QkQ70yHj351pQoEXIs8uHbaU2DWVmzBANKgflPa47A50PtB2+NgRpQvr7vA==}
     engines: {node: '>= 10'}
@@ -1101,6 +2118,45 @@ packages:
   radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
+  react-dom@19.2.4:
+    resolution: {integrity: sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==}
+    peerDependencies:
+      react: ^19.2.4
+
+  react-remove-scroll-bar@2.3.8:
+    resolution: {integrity: sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  react-remove-scroll@2.7.2:
+    resolution: {integrity: sha512-Iqb9NjCCTt6Hf+vOdNIZGdTiH1QSqr27H/Ek9sv/a97gfueI/5h1s3yRi1nngzMUaOOToin5dI1dXKdXiF+u0Q==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  react-style-singleton@2.2.3:
+    resolution: {integrity: sha512-b6jSvxvVnyptAiLjbkWLE/lOnR4lfTtDAl+eUC7RZy+QQWc6wRzIV2CE6xBuMmDxc2qIihtDCZD5NPOFl7fRBQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  react@19.2.4:
+    resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
+    engines: {node: '>=0.10.0'}
+
   readdirp@5.0.0:
     resolution: {integrity: sha512-9u/XQ1pvrQtYyMpZe7DXKv2p5CNvyVwzUB6uhLAnQwHMSgKMBR62lc7AHljaeteeHXn11XTAaLLUVZYVZyuRBQ==}
     engines: {node: '>= 20.19.0'}
@@ -1163,6 +2219,9 @@ packages:
     resolution: {integrity: sha512-6R3J5M4AcbtLUdZmRv2SygeVaM7IhrLXu9BmnOGmmACak8fiUtOsYNWUS4uK7upbmHIBbLBeFeI//477BKLBzA==}
     engines: {node: '>=11.0.0'}
 
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
+
   semver@7.7.4:
     resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
     engines: {node: '>=10'}
@@ -1198,6 +2257,13 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
+  tailwindcss@4.2.2:
+    resolution: {integrity: sha512-KWBIxs1Xb6NoLdMVqhbhgwZf2PGBpPEiwOqgI4pFIYbNTfBXiKYyWoTsXgBQ9WFg/OlhnvHaY+AEpW7wSmFo2Q==}
+
+  tapable@2.3.2:
+    resolution: {integrity: sha512-1MOpMXuhGzGL5TTCZFItxCc0AARf1EZFQkGqMm7ERKj8+Hgr5oLvJOVFcC+lRmR8hCe2S3jC4T5D7Vg/d7/fhA==}
+    engines: {node: '>=6'}
+
   tiny-inflate@1.0.3:
     resolution: {integrity: sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==}
 
@@ -1231,6 +2297,10 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
+  type-fest@4.41.0:
+    resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
+    engines: {node: '>=16'}
 
   ufo@1.6.3:
     resolution: {integrity: sha512-yDJTmhydvl5lJzBmy/hyOAA0d+aqCBuwl818haVdYCRrWV84o7YyeVm4QlVHStqNrrJSTb6jKuFAVqAFsr+K3Q==}
@@ -1336,6 +2406,35 @@ packages:
       uploadthing:
         optional: true
 
+  use-callback-ref@1.3.3:
+    resolution: {integrity: sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  use-sidecar@1.1.3:
+    resolution: {integrity: sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  use-sync-external-store@1.6.0:
+    resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
+    hasBin: true
+
   vfile-location@5.0.3:
     resolution: {integrity: sha512-5yXvWDEgqeiYiBe1lbxYF7UMAIm/IcopxMHrMQDq3nvKcjPKIhZklUKL+AE7J7uApI4kwe2snsK+eI6UTj9EHg==}
 
@@ -1402,6 +2501,11 @@ packages:
 
   xxhash-wasm@1.1.0:
     resolution: {integrity: sha512-147y/6YNh+tlp6nd/2pWq38i9h6mz/EuQ6njIrmW8D1BS5nCqs0P6DG+m6zTGnNz5I+uhZ0SHxBs9BsPrwcKDA==}
+
+  yaml@2.8.3:
+    resolution: {integrity: sha512-AvbaCLOO2Otw/lW5bmh9d/WEdcDFdQp2Z2ZUH3pX9U2ihyUY0nvLv7J6TrWowklRGPYbB/IuIMfYgxaCPg5Bpg==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
 
   yargs-parser@22.0.0:
     resolution: {integrity: sha512-rwu/ClNdSMpkSrUb+d6BRsSkLUq1fmfsY6TOpYzTwvwkg1/NRG85KBy3kq++A8LKQwX6lsu+aWad+2khvuXrqw==}
@@ -1474,6 +2578,8 @@ snapshots:
   '@babel/parser@7.29.2':
     dependencies:
       '@babel/types': 7.29.0
+
+  '@babel/runtime@7.29.2': {}
 
   '@babel/types@7.29.0':
     dependencies:
@@ -1579,6 +2685,49 @@ snapshots:
   '@esbuild/win32-x64@0.27.7':
     optional: true
 
+  '@floating-ui/core@1.7.5':
+    dependencies:
+      '@floating-ui/utils': 0.2.11
+
+  '@floating-ui/dom@1.7.6':
+    dependencies:
+      '@floating-ui/core': 1.7.5
+      '@floating-ui/utils': 0.2.11
+
+  '@floating-ui/react-dom@2.1.8(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@floating-ui/dom': 1.7.6
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@floating-ui/utils@0.2.11': {}
+
+  '@formatjs/ecma402-abstract@2.3.6':
+    dependencies:
+      '@formatjs/fast-memoize': 2.2.7
+      '@formatjs/intl-localematcher': 0.6.2
+      decimal.js: 10.6.0
+      tslib: 2.8.1
+
+  '@formatjs/fast-memoize@2.2.7':
+    dependencies:
+      tslib: 2.8.1
+
+  '@formatjs/icu-messageformat-parser@2.11.4':
+    dependencies:
+      '@formatjs/ecma402-abstract': 2.3.6
+      '@formatjs/icu-skeleton-parser': 1.8.16
+      tslib: 2.8.1
+
+  '@formatjs/icu-skeleton-parser@1.8.16':
+    dependencies:
+      '@formatjs/ecma402-abstract': 2.3.6
+      tslib: 2.8.1
+
+  '@formatjs/intl-localematcher@0.6.2':
+    dependencies:
+      tslib: 2.8.1
+
   '@img/colour@1.1.0':
     optional: true
 
@@ -1676,9 +2825,257 @@ snapshots:
   '@img/sharp-win32-x64@0.34.5':
     optional: true
 
+  '@jridgewell/gen-mapping@0.3.13':
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/trace-mapping': 0.3.31
+
+  '@jridgewell/remapping@2.3.5':
+    dependencies:
+      '@jridgewell/gen-mapping': 0.3.13
+      '@jridgewell/trace-mapping': 0.3.31
+
+  '@jridgewell/resolve-uri@3.1.2': {}
+
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
+  '@jridgewell/trace-mapping@0.3.31':
+    dependencies:
+      '@jridgewell/resolve-uri': 3.1.2
+      '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@nanostores/react@1.1.0(nanostores@1.2.0)(react@19.2.4)':
+    dependencies:
+      nanostores: 1.2.0
+      react: 19.2.4
+
   '@oslojs/encoding@1.1.0': {}
+
+  '@preact/signals-core@1.14.1': {}
+
+  '@preact/signals-react@3.10.0(react@19.2.4)':
+    dependencies:
+      '@preact/signals-core': 1.14.1
+      react: 19.2.4
+      use-sync-external-store: 1.6.0(react@19.2.4)
+
+  '@radix-ui/number@1.1.1': {}
+
+  '@radix-ui/primitive@1.1.3': {}
+
+  '@radix-ui/react-arrow@1.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-collection@1.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-slot': 1.2.3(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-compose-refs@1.1.2(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@radix-ui/react-context@1.1.2(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@radix-ui/react-direction@1.1.1(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@radix-ui/react-dismissable-layer@1.1.11(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/primitive': 1.1.3
+      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(react@19.2.4)
+      '@radix-ui/react-use-escape-keydown': 1.1.1(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-focus-guards@1.1.3(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@radix-ui/react-focus-scope@1.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-id@1.1.1(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-use-layout-effect': 1.1.1(react@19.2.4)
+      react: 19.2.4
+
+  '@radix-ui/react-popper@1.2.8(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@floating-ui/react-dom': 2.1.8(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-arrow': 1.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(react@19.2.4)
+      '@radix-ui/react-use-rect': 1.1.1(react@19.2.4)
+      '@radix-ui/react-use-size': 1.1.1(react@19.2.4)
+      '@radix-ui/rect': 1.1.1
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-portal@1.1.9(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-primitive@2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-slot': 1.2.3(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-roving-focus@1.1.11(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/primitive': 1.1.3
+      '@radix-ui/react-collection': 1.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(react@19.2.4)
+      '@radix-ui/react-direction': 1.1.1(react@19.2.4)
+      '@radix-ui/react-id': 1.1.1(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(react@19.2.4)
+      '@radix-ui/react-use-controllable-state': 1.2.2(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-select@2.2.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/number': 1.1.1
+      '@radix-ui/primitive': 1.1.3
+      '@radix-ui/react-collection': 1.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(react@19.2.4)
+      '@radix-ui/react-direction': 1.1.1(react@19.2.4)
+      '@radix-ui/react-dismissable-layer': 1.1.11(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-focus-guards': 1.1.3(react@19.2.4)
+      '@radix-ui/react-focus-scope': 1.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-id': 1.1.1(react@19.2.4)
+      '@radix-ui/react-popper': 1.2.8(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-portal': 1.1.9(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-slot': 1.2.3(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(react@19.2.4)
+      '@radix-ui/react-use-controllable-state': 1.2.2(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(react@19.2.4)
+      '@radix-ui/react-use-previous': 1.1.1(react@19.2.4)
+      '@radix-ui/react-visually-hidden': 1.2.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      aria-hidden: 1.2.6
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+      react-remove-scroll: 2.7.2(react@19.2.4)
+
+  '@radix-ui/react-slider@1.3.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/number': 1.1.1
+      '@radix-ui/primitive': 1.1.3
+      '@radix-ui/react-collection': 1.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(react@19.2.4)
+      '@radix-ui/react-direction': 1.1.1(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-controllable-state': 1.2.2(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(react@19.2.4)
+      '@radix-ui/react-use-previous': 1.1.1(react@19.2.4)
+      '@radix-ui/react-use-size': 1.1.1(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-slot@1.2.3(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.4)
+      react: 19.2.4
+
+  '@radix-ui/react-slot@1.2.4(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-compose-refs': 1.1.2(react@19.2.4)
+      react: 19.2.4
+
+  '@radix-ui/react-toggle-group@1.1.11(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/primitive': 1.1.3
+      '@radix-ui/react-context': 1.1.2(react@19.2.4)
+      '@radix-ui/react-direction': 1.1.1(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-roving-focus': 1.1.11(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-toggle': 1.1.10(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-controllable-state': 1.2.2(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-toggle@1.1.10(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/primitive': 1.1.3
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-controllable-state': 1.2.2(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/react-use-callback-ref@1.1.1(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@radix-ui/react-use-controllable-state@1.2.2(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-use-effect-event': 0.0.2(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(react@19.2.4)
+      react: 19.2.4
+
+  '@radix-ui/react-use-effect-event@0.0.2(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-use-layout-effect': 1.1.1(react@19.2.4)
+      react: 19.2.4
+
+  '@radix-ui/react-use-escape-keydown@1.1.1(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-use-callback-ref': 1.1.1(react@19.2.4)
+      react: 19.2.4
+
+  '@radix-ui/react-use-layout-effect@1.1.1(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@radix-ui/react-use-previous@1.1.1(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@radix-ui/react-use-rect@1.1.1(react@19.2.4)':
+    dependencies:
+      '@radix-ui/rect': 1.1.1
+      react: 19.2.4
+
+  '@radix-ui/react-use-size@1.1.1(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-use-layout-effect': 1.1.1(react@19.2.4)
+      react: 19.2.4
+
+  '@radix-ui/react-visually-hidden@1.2.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-primitive': 2.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@radix-ui/rect@1.1.1': {}
 
   '@rollup/pluginutils@5.3.0(rollup@4.60.1)':
     dependencies:
@@ -1803,6 +3200,74 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
+  '@tailwindcss/node@4.2.2':
+    dependencies:
+      '@jridgewell/remapping': 2.3.5
+      enhanced-resolve: 5.20.1
+      jiti: 2.6.1
+      lightningcss: 1.32.0
+      magic-string: 0.30.21
+      source-map-js: 1.2.1
+      tailwindcss: 4.2.2
+
+  '@tailwindcss/oxide-android-arm64@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-darwin-arm64@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-darwin-x64@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-freebsd-x64@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-linux-arm-gnueabihf@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-linux-arm64-gnu@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-linux-arm64-musl@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-linux-x64-gnu@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-linux-x64-musl@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-wasm32-wasi@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-win32-arm64-msvc@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide-win32-x64-msvc@4.2.2':
+    optional: true
+
+  '@tailwindcss/oxide@4.2.2':
+    optionalDependencies:
+      '@tailwindcss/oxide-android-arm64': 4.2.2
+      '@tailwindcss/oxide-darwin-arm64': 4.2.2
+      '@tailwindcss/oxide-darwin-x64': 4.2.2
+      '@tailwindcss/oxide-freebsd-x64': 4.2.2
+      '@tailwindcss/oxide-linux-arm-gnueabihf': 4.2.2
+      '@tailwindcss/oxide-linux-arm64-gnu': 4.2.2
+      '@tailwindcss/oxide-linux-arm64-musl': 4.2.2
+      '@tailwindcss/oxide-linux-x64-gnu': 4.2.2
+      '@tailwindcss/oxide-linux-x64-musl': 4.2.2
+      '@tailwindcss/oxide-wasm32-wasi': 4.2.2
+      '@tailwindcss/oxide-win32-arm64-msvc': 4.2.2
+      '@tailwindcss/oxide-win32-x64-msvc': 4.2.2
+
+  '@tailwindcss/vite@4.2.2(vite@7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3))':
+    dependencies:
+      '@tailwindcss/node': 4.2.2
+      '@tailwindcss/oxide': 4.2.2
+      tailwindcss: 4.2.2
+      vite: 7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3)
+
   '@types/debug@4.1.13':
     dependencies:
       '@types/ms': 2.1.0
@@ -1827,6 +3292,829 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
+  '@wix/analytics@1.15.0': {}
+
+  '@wix/authentication@1.13.0(@wix/sdk@1.21.5)':
+    dependencies:
+      '@wix/sdk': 1.21.5
+      '@wix/sdk-runtime': 1.0.11
+
+  '@wix/auto_sdk_bookings_availability-calendar@1.0.188':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_categories_categories@1.0.107':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/auto_sdk_ecom_abandoned-checkouts@1.0.72':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_additional-fees@1.0.43':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_back-in-stock-notifications@1.0.59':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_back-in-stock-settings@1.0.39':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_cart-v-2@1.0.124':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_cart@1.0.148':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_catalog@1.0.57':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_checkout-content@1.0.34':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_checkout-settings@1.0.62':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_checkout-templates@1.0.128':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_checkout@1.0.142':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_currencies@1.0.33':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_current-cart-v-2@1.0.124':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_current-cart@1.0.158':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_custom-triggers@1.0.35':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_delivery-profile@1.0.383':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_delivery-solutions@1.0.56':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_discount-rules@1.0.106':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_discounts-custom-trigger@1.0.41':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_discounts@1.0.32':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_draft-orders@1.0.143':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_ecommerce-settings@1.0.22':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_gift-vouchers-provider@1.0.31':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_gift-vouchers@1.0.41':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_inventory@1.0.22':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_local-delivery-options@1.0.49':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_manual-tax-mappings@1.0.34':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_memberships@1.0.34':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_order-billing@1.0.69':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_order-fulfillments@1.0.57':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_order-invoices@1.0.49':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_order-payment-requests@1.0.56':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_order-transactions@1.0.82':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_orders-settings@1.0.51':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_orders@1.0.236':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_payment-settings@1.0.119':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_pickup-locations@1.0.47':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_recommendations-provider@1.0.31':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_recommendations@1.0.44':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_shipping-options@1.0.117':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_shipping-rates@1.0.37':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_shippo-configurations@1.0.65':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_subscription-contracts@1.0.108':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_tax-calculation-provider@1.0.27':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_tax-calculation@1.0.49':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_tax-groups@1.0.56':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_tax-regions@1.0.54':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_tip-settings@1.0.50':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_tippable-staff@1.0.38':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_tips@1.0.59':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_totals-calculator@1.0.94':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_ecom_validations@1.0.50':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_headless-site-assets_scripts@1.0.11':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/auto_sdk_identity_authentication@1.0.45':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.10
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/auto_sdk_identity_oauth@1.0.36':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.10
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/auto_sdk_identity_recovery@1.0.42':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.10
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/auto_sdk_identity_verification@1.0.42':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.10
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/auto_sdk_redirects_redirects@1.0.40':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.10
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/auto_sdk_stores_abandoned-carts@1.0.38':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_brands-v-3@1.0.70':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_catalog-imports-v-3@1.0.49':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_catalog-versioning@1.0.60':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_collections@1.0.36':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_customizations-v-3@1.0.75':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_info-sections-v-3@1.0.86':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_inventory-items-v-3@1.0.77':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_inventory@1.0.59':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_products-v-3@1.0.163':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_products@1.0.79':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_read-only-variants-v-3@1.0.109':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_ribbons-v-3@1.0.51':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_stores-locations-v-3@1.0.47':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_subscription-options@1.0.55':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/auto_sdk_stores_wishlist@1.0.34':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/consent-policy-manager@1.15.0': {}
+
+  '@wix/ecom@1.0.1996(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))':
+    dependencies:
+      '@wix/auto_sdk_ecom_abandoned-checkouts': 1.0.72
+      '@wix/auto_sdk_ecom_additional-fees': 1.0.43
+      '@wix/auto_sdk_ecom_back-in-stock-notifications': 1.0.59
+      '@wix/auto_sdk_ecom_back-in-stock-settings': 1.0.39
+      '@wix/auto_sdk_ecom_cart': 1.0.148
+      '@wix/auto_sdk_ecom_cart-v-2': 1.0.124
+      '@wix/auto_sdk_ecom_catalog': 1.0.57
+      '@wix/auto_sdk_ecom_checkout': 1.0.142
+      '@wix/auto_sdk_ecom_checkout-content': 1.0.34
+      '@wix/auto_sdk_ecom_checkout-settings': 1.0.62
+      '@wix/auto_sdk_ecom_checkout-templates': 1.0.128
+      '@wix/auto_sdk_ecom_currencies': 1.0.33
+      '@wix/auto_sdk_ecom_current-cart': 1.0.158
+      '@wix/auto_sdk_ecom_current-cart-v-2': 1.0.124
+      '@wix/auto_sdk_ecom_custom-triggers': 1.0.35
+      '@wix/auto_sdk_ecom_delivery-profile': 1.0.383
+      '@wix/auto_sdk_ecom_delivery-solutions': 1.0.56
+      '@wix/auto_sdk_ecom_discount-rules': 1.0.106
+      '@wix/auto_sdk_ecom_discounts': 1.0.32
+      '@wix/auto_sdk_ecom_discounts-custom-trigger': 1.0.41
+      '@wix/auto_sdk_ecom_draft-orders': 1.0.143
+      '@wix/auto_sdk_ecom_ecommerce-settings': 1.0.22
+      '@wix/auto_sdk_ecom_gift-vouchers': 1.0.41
+      '@wix/auto_sdk_ecom_gift-vouchers-provider': 1.0.31
+      '@wix/auto_sdk_ecom_inventory': 1.0.22
+      '@wix/auto_sdk_ecom_local-delivery-options': 1.0.49
+      '@wix/auto_sdk_ecom_manual-tax-mappings': 1.0.34
+      '@wix/auto_sdk_ecom_memberships': 1.0.34
+      '@wix/auto_sdk_ecom_order-billing': 1.0.69
+      '@wix/auto_sdk_ecom_order-fulfillments': 1.0.57
+      '@wix/auto_sdk_ecom_order-invoices': 1.0.49
+      '@wix/auto_sdk_ecom_order-payment-requests': 1.0.56
+      '@wix/auto_sdk_ecom_order-transactions': 1.0.82
+      '@wix/auto_sdk_ecom_orders': 1.0.236
+      '@wix/auto_sdk_ecom_orders-settings': 1.0.51
+      '@wix/auto_sdk_ecom_payment-settings': 1.0.119
+      '@wix/auto_sdk_ecom_pickup-locations': 1.0.47
+      '@wix/auto_sdk_ecom_recommendations': 1.0.44
+      '@wix/auto_sdk_ecom_recommendations-provider': 1.0.31
+      '@wix/auto_sdk_ecom_shipping-options': 1.0.117
+      '@wix/auto_sdk_ecom_shipping-rates': 1.0.37
+      '@wix/auto_sdk_ecom_shippo-configurations': 1.0.65
+      '@wix/auto_sdk_ecom_subscription-contracts': 1.0.108
+      '@wix/auto_sdk_ecom_tax-calculation': 1.0.49
+      '@wix/auto_sdk_ecom_tax-calculation-provider': 1.0.27
+      '@wix/auto_sdk_ecom_tax-groups': 1.0.56
+      '@wix/auto_sdk_ecom_tax-regions': 1.0.54
+      '@wix/auto_sdk_ecom_tip-settings': 1.0.50
+      '@wix/auto_sdk_ecom_tippable-staff': 1.0.38
+      '@wix/auto_sdk_ecom_tips': 1.0.59
+      '@wix/auto_sdk_ecom_totals-calculator': 1.0.94
+      '@wix/auto_sdk_ecom_validations': 1.0.50
+      '@wix/ecom_app-extensions': 1.0.100
+      '@wix/headless-ecom': 0.0.41(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@wix/headless-components'
+      - react
+      - use-sync-external-store
+
+  '@wix/ecom_app-extensions@1.0.100':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
+  '@wix/error-handler-core@1.19.0':
+    dependencies:
+      '@babel/runtime': 7.29.2
+      '@wix/error-handler-types': 1.19.0
+
+  '@wix/error-handler-types@1.19.0':
+    dependencies:
+      '@babel/runtime': 7.29.2
+
+  '@wix/error-handler@1.67.0(i18next-icu@2.4.3(intl-messageformat@10.7.18))(i18next@25.10.10)(intl-messageformat@10.7.18)':
+    dependencies:
+      '@babel/runtime': 7.29.2
+      '@wix/error-handler-core': 1.19.0
+      events: 3.3.0
+      http-status-codes: 2.3.0
+      uuid: 10.0.0
+    optionalDependencies:
+      i18next: 25.10.10
+      i18next-icu: 2.4.3(intl-messageformat@10.7.18)
+      intl-messageformat: 10.7.18
+
+  '@wix/essentials@0.1.28':
+    dependencies:
+      '@wix/error-handler': 1.67.0(i18next-icu@2.4.3(intl-messageformat@10.7.18))(i18next@25.10.10)(intl-messageformat@10.7.18)
+      '@wix/monitoring': 0.21.0
+      '@wix/sdk-runtime': 0.3.62
+      '@wix/sdk-types': 1.17.6
+      i18next: 25.10.10
+      i18next-icu: 2.4.3(intl-messageformat@10.7.18)
+      intl-messageformat: 10.7.18
+    optionalDependencies:
+      graphql: 16.13.2
+    transitivePeerDependencies:
+      - '@wix/fe-essentials'
+      - typescript
+
+  '@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-select': 2.2.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-slider': 1.3.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-toggle-group': 1.1.11(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@wix/headless-utils': 0.0.0(react@19.2.4)
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-dom'
+      - react
+      - react-dom
+
+  '@wix/headless-ecom@0.0.41(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))':
+    dependencies:
+      '@radix-ui/react-slot': 1.2.4(react@19.2.4)
+      '@wix/auto_sdk_ecom_checkout': 1.0.142
+      '@wix/auto_sdk_ecom_current-cart': 1.0.158
+      '@wix/headless-components': 0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@wix/headless-media': 0.0.21(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+      '@wix/redirects': 1.0.112
+      '@wix/sdk': 1.21.5
+      '@wix/services-definitions': 1.0.1
+      '@wix/services-manager-react': 1.0.4(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+    transitivePeerDependencies:
+      - '@types/react'
+      - react
+      - use-sync-external-store
+
+  '@wix/headless-ecom@0.0.45(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))':
+    dependencies:
+      '@radix-ui/react-slot': 1.2.4(react@19.2.4)
+      '@wix/auto_sdk_ecom_checkout': 1.0.142
+      '@wix/auto_sdk_ecom_current-cart': 1.0.158
+      '@wix/headless-components': 0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@wix/headless-media': 0.0.25(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+      '@wix/redirects': 1.0.112
+      '@wix/sdk': 1.21.5
+      '@wix/services-definitions': 1.0.1
+      '@wix/services-manager-react': 1.0.4(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+    transitivePeerDependencies:
+      - '@types/react'
+      - react
+      - use-sync-external-store
+
+  '@wix/headless-localization-utils@1.0.13':
+    dependencies:
+      '@wix/headless-node': 1.38.0
+      '@wix/headless-site-assets': 1.0.11
+
+  '@wix/headless-media@0.0.21(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))':
+    dependencies:
+      '@wix/sdk': 1.21.5
+      '@wix/services-definitions': 1.0.1
+      '@wix/services-manager-react': 1.0.4(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+    transitivePeerDependencies:
+      - react
+      - use-sync-external-store
+
+  '@wix/headless-media@0.0.25(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))':
+    dependencies:
+      '@wix/sdk': 1.21.5
+      '@wix/services-definitions': 1.0.1
+      '@wix/services-manager-react': 1.0.4(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+    transitivePeerDependencies:
+      - react
+      - use-sync-external-store
+
+  '@wix/headless-node@1.38.0':
+    dependencies:
+      '@babel/runtime': 7.29.2
+      '@wix/monitoring-velo': 1.20.0
+      '@wix/sdk-runtime': 1.0.11
+
+  '@wix/headless-site-assets@1.0.11':
+    dependencies:
+      '@wix/auto_sdk_headless-site-assets_scripts': 1.0.11
+
+  '@wix/headless-stores@0.0.117(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@wix/sdk@1.21.5)(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))':
+    dependencies:
+      '@radix-ui/react-slot': 1.2.4(react@19.2.4)
+      '@wix/auto_sdk_bookings_availability-calendar': 1.0.188
+      '@wix/auto_sdk_categories_categories': 1.0.107
+      '@wix/ecom': 1.0.1996(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+      '@wix/essentials': 0.1.28
+      '@wix/headless-components': 0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@wix/headless-ecom': 0.0.45(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+      '@wix/headless-media': 0.0.25(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+      '@wix/headless-utils': 0.0.12(react@19.2.4)
+      '@wix/redirects': 1.0.112
+      '@wix/services-definitions': 1.0.1
+      '@wix/services-manager-react': 1.0.4(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+      '@wix/site': 1.56.0(@wix/sdk@1.21.5)
+      '@wix/stores': 1.0.742(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@wix/sdk@1.21.5)(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@wix/fe-essentials'
+      - '@wix/sdk'
+      - react
+      - typescript
+      - use-sync-external-store
+
+  '@wix/headless-utils@0.0.0(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-slot': 1.2.4(react@19.2.4)
+      react: 19.2.4
+    transitivePeerDependencies:
+      - '@types/react'
+
+  '@wix/headless-utils@0.0.12(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-slot': 1.2.4(react@19.2.4)
+      react: 19.2.4
+    transitivePeerDependencies:
+      - '@types/react'
+
+  '@wix/identity@1.0.194':
+    dependencies:
+      '@wix/auto_sdk_identity_authentication': 1.0.45
+      '@wix/auto_sdk_identity_oauth': 1.0.36
+      '@wix/auto_sdk_identity_recovery': 1.0.42
+      '@wix/auto_sdk_identity_verification': 1.0.42
+
+  '@wix/image-kit@1.121.0':
+    dependencies:
+      '@babel/runtime': 7.29.2
+      tslib: 2.8.1
+
+  '@wix/monitoring-common@1.11.0': {}
+
+  '@wix/monitoring-types@0.12.0': {}
+
+  '@wix/monitoring-types@0.15.0': {}
+
+  '@wix/monitoring-velo@1.20.0':
+    dependencies:
+      '@wix/monitoring': 0.24.0
+      '@wix/monitoring-common': 1.11.0
+      lodash: 4.18.1
+
+  '@wix/monitoring@0.21.0':
+    dependencies:
+      '@wix/monitoring-types': 0.12.0
+
+  '@wix/monitoring@0.24.0':
+    dependencies:
+      '@wix/monitoring-types': 0.15.0
+
+  '@wix/multilingual-manager@1.9.0':
+    dependencies:
+      '@wix/headless-localization-utils': 1.0.13
+      lodash: 4.18.1
+
+  '@wix/redirects@1.0.112':
+    dependencies:
+      '@wix/auto_sdk_redirects_redirects': 1.0.40
+
+  '@wix/sdk-context@0.0.1': {}
+
+  '@wix/sdk-react-context@1.0.2(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@wix/sdk-runtime@0.3.62':
+    dependencies:
+      '@wix/sdk-context': 0.0.1
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/sdk-runtime@1.0.10':
+    dependencies:
+      '@wix/sdk-context': 0.0.1
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/sdk-runtime@1.0.11':
+    dependencies:
+      '@wix/sdk-context': 0.0.1
+      '@wix/sdk-types': 1.17.6
+
+  '@wix/sdk-types@1.17.6':
+    dependencies:
+      '@wix/error-handler-types': 1.19.0
+      '@wix/monitoring-types': 0.12.0
+      type-fest: 4.41.0
+
+  '@wix/sdk@1.21.5':
+    dependencies:
+      '@wix/identity': 1.0.194
+      '@wix/image-kit': 1.121.0
+      '@wix/redirects': 1.0.112
+      '@wix/sdk-context': 0.0.1
+      '@wix/sdk-runtime': 1.0.10
+      '@wix/sdk-types': 1.17.6
+      jose: 5.10.0
+      type-fest: 4.41.0
+    optionalDependencies:
+      graphql: 16.13.2
+
+  '@wix/services-definitions@1.0.1':
+    dependencies:
+      type-fest: 4.41.0
+
+  '@wix/services-manager-react@1.0.4(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))':
+    dependencies:
+      '@preact/signals-react': 3.10.0(react@19.2.4)
+      '@wix/sdk-react-context': 1.0.2(react@19.2.4)
+      '@wix/services-definitions': 1.0.1
+      '@wix/services-manager': 1.0.2
+      react: 19.2.4
+      use-sync-external-store: 1.6.0(react@19.2.4)
+
+  '@wix/services-manager@1.0.2':
+    dependencies:
+      '@preact/signals-core': 1.14.1
+      '@wix/sdk-context': 0.0.1
+      '@wix/services-definitions': 1.0.1
+
+  '@wix/site@1.56.0(@wix/sdk@1.21.5)':
+    dependencies:
+      '@babel/runtime': 7.29.2
+      '@wix/analytics': 1.15.0
+      '@wix/authentication': 1.13.0(@wix/sdk@1.21.5)
+      '@wix/consent-policy-manager': 1.15.0
+      '@wix/multilingual-manager': 1.9.0
+      '@wix/sdk-types': 1.17.6
+    transitivePeerDependencies:
+      - '@wix/sdk'
+
+  '@wix/stores@1.0.742(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@wix/sdk@1.21.5)(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))':
+    dependencies:
+      '@wix/auto_sdk_stores_abandoned-carts': 1.0.38
+      '@wix/auto_sdk_stores_brands-v-3': 1.0.70
+      '@wix/auto_sdk_stores_catalog-imports-v-3': 1.0.49
+      '@wix/auto_sdk_stores_catalog-versioning': 1.0.60
+      '@wix/auto_sdk_stores_collections': 1.0.36
+      '@wix/auto_sdk_stores_customizations-v-3': 1.0.75
+      '@wix/auto_sdk_stores_info-sections-v-3': 1.0.86
+      '@wix/auto_sdk_stores_inventory': 1.0.59
+      '@wix/auto_sdk_stores_inventory-items-v-3': 1.0.77
+      '@wix/auto_sdk_stores_products': 1.0.79
+      '@wix/auto_sdk_stores_products-v-3': 1.0.163
+      '@wix/auto_sdk_stores_read-only-variants-v-3': 1.0.109
+      '@wix/auto_sdk_stores_ribbons-v-3': 1.0.51
+      '@wix/auto_sdk_stores_stores-locations-v-3': 1.0.47
+      '@wix/auto_sdk_stores_subscription-options': 1.0.55
+      '@wix/auto_sdk_stores_wishlist': 1.0.34
+      '@wix/headless-stores': 0.0.117(@wix/headless-components@0.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@wix/sdk@1.21.5)(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
+      '@wix/stores_app-extensions': 1.0.50
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@wix/fe-essentials'
+      - '@wix/headless-components'
+      - '@wix/sdk'
+      - react
+      - typescript
+      - use-sync-external-store
+
+  '@wix/stores_app-extensions@1.0.50':
+    dependencies:
+      '@wix/sdk-runtime': 1.0.11
+      '@wix/sdk-types': 1.17.6
+      zod: 4.3.6
+
   anymatch@3.1.3:
     dependencies:
       normalize-path: 3.0.0
@@ -1834,11 +4122,15 @@ snapshots:
 
   argparse@2.0.1: {}
 
+  aria-hidden@1.2.6:
+    dependencies:
+      tslib: 2.8.1
+
   aria-query@5.3.2: {}
 
   array-iterate@2.0.1: {}
 
-  astro@6.1.3(rollup@4.60.1):
+  astro@6.1.3(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(yaml@2.8.3):
     dependencies:
       '@astrojs/compiler': 3.0.1
       '@astrojs/internal-helpers': 0.8.0
@@ -1890,8 +4182,8 @@ snapshots:
       unist-util-visit: 5.1.0
       unstorage: 1.17.5
       vfile: 6.0.3
-      vite: 7.3.1
-      vitefu: 1.1.3(vite@7.3.1)
+      vite: 7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3)
+      vitefu: 1.1.3(vite@7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3))
       xxhash-wasm: 1.1.0
       yargs-parser: 22.0.0
       zod: 4.3.6
@@ -1996,6 +4288,8 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
+  decimal.js@10.6.0: {}
+
   decode-named-character-reference@1.3.0:
     dependencies:
       character-entities: 2.0.2
@@ -2006,8 +4300,9 @@ snapshots:
 
   destr@2.0.5: {}
 
-  detect-libc@2.1.2:
-    optional: true
+  detect-libc@2.1.2: {}
+
+  detect-node-es@1.1.0: {}
 
   devalue@5.6.4: {}
 
@@ -2038,6 +4333,11 @@ snapshots:
       domhandler: 5.0.3
 
   dset@3.1.4: {}
+
+  enhanced-resolve@5.20.1:
+    dependencies:
+      graceful-fs: 4.2.11
+      tapable: 2.3.2
 
   entities@4.5.0: {}
 
@@ -2080,6 +4380,8 @@ snapshots:
 
   eventemitter3@5.0.4: {}
 
+  events@3.3.0: {}
+
   extend@3.0.2: {}
 
   fast-string-truncated-width@1.2.1: {}
@@ -2109,7 +4411,14 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
+  get-nonce@1.0.1: {}
+
   github-slugger@2.0.0: {}
+
+  graceful-fs@4.2.11: {}
+
+  graphql@16.13.2:
+    optional: true
 
   h3@1.15.11:
     dependencies:
@@ -2216,6 +4525,23 @@ snapshots:
 
   http-cache-semantics@4.2.0: {}
 
+  http-status-codes@2.3.0: {}
+
+  i18next-icu@2.4.3(intl-messageformat@10.7.18):
+    dependencies:
+      intl-messageformat: 10.7.18
+
+  i18next@25.10.10:
+    dependencies:
+      '@babel/runtime': 7.29.2
+
+  intl-messageformat@10.7.18:
+    dependencies:
+      '@formatjs/ecma402-abstract': 2.3.6
+      '@formatjs/fast-memoize': 2.2.7
+      '@formatjs/icu-messageformat-parser': 2.11.4
+      tslib: 2.8.1
+
   iron-webcrypto@1.2.1: {}
 
   is-docker@3.0.0: {}
@@ -2230,9 +4556,64 @@ snapshots:
     dependencies:
       is-inside-container: 1.0.0
 
+  jiti@2.6.1: {}
+
+  jose@5.10.0: {}
+
   js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
+
+  lightningcss-android-arm64@1.32.0:
+    optional: true
+
+  lightningcss-darwin-arm64@1.32.0:
+    optional: true
+
+  lightningcss-darwin-x64@1.32.0:
+    optional: true
+
+  lightningcss-freebsd-x64@1.32.0:
+    optional: true
+
+  lightningcss-linux-arm-gnueabihf@1.32.0:
+    optional: true
+
+  lightningcss-linux-arm64-gnu@1.32.0:
+    optional: true
+
+  lightningcss-linux-arm64-musl@1.32.0:
+    optional: true
+
+  lightningcss-linux-x64-gnu@1.32.0:
+    optional: true
+
+  lightningcss-linux-x64-musl@1.32.0:
+    optional: true
+
+  lightningcss-win32-arm64-msvc@1.32.0:
+    optional: true
+
+  lightningcss-win32-x64-msvc@1.32.0:
+    optional: true
+
+  lightningcss@1.32.0:
+    dependencies:
+      detect-libc: 2.1.2
+    optionalDependencies:
+      lightningcss-android-arm64: 1.32.0
+      lightningcss-darwin-arm64: 1.32.0
+      lightningcss-darwin-x64: 1.32.0
+      lightningcss-freebsd-x64: 1.32.0
+      lightningcss-linux-arm-gnueabihf: 1.32.0
+      lightningcss-linux-arm64-gnu: 1.32.0
+      lightningcss-linux-arm64-musl: 1.32.0
+      lightningcss-linux-x64-gnu: 1.32.0
+      lightningcss-linux-x64-musl: 1.32.0
+      lightningcss-win32-arm64-msvc: 1.32.0
+      lightningcss-win32-x64-msvc: 1.32.0
+
+  lodash@4.18.1: {}
 
   longest-streak@3.1.0: {}
 
@@ -2571,6 +4952,8 @@ snapshots:
 
   nanoid@3.3.11: {}
 
+  nanostores@1.2.0: {}
+
   neotraverse@0.6.18: {}
 
   nlcst-to-string@4.0.0:
@@ -2650,6 +5033,34 @@ snapshots:
   property-information@7.1.0: {}
 
   radix3@1.1.2: {}
+
+  react-dom@19.2.4(react@19.2.4):
+    dependencies:
+      react: 19.2.4
+      scheduler: 0.27.0
+
+  react-remove-scroll-bar@2.3.8(react@19.2.4):
+    dependencies:
+      react: 19.2.4
+      react-style-singleton: 2.2.3(react@19.2.4)
+      tslib: 2.8.1
+
+  react-remove-scroll@2.7.2(react@19.2.4):
+    dependencies:
+      react: 19.2.4
+      react-remove-scroll-bar: 2.3.8(react@19.2.4)
+      react-style-singleton: 2.2.3(react@19.2.4)
+      tslib: 2.8.1
+      use-callback-ref: 1.3.3(react@19.2.4)
+      use-sidecar: 1.1.3(react@19.2.4)
+
+  react-style-singleton@2.2.3(react@19.2.4):
+    dependencies:
+      get-nonce: 1.0.1
+      react: 19.2.4
+      tslib: 2.8.1
+
+  react@19.2.4: {}
 
   readdirp@5.0.0: {}
 
@@ -2787,6 +5198,8 @@ snapshots:
 
   sax@1.6.0: {}
 
+  scheduler@0.27.0: {}
+
   semver@7.7.4: {}
 
   sharp@0.34.5:
@@ -2855,6 +5268,10 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.6.0
 
+  tailwindcss@4.2.2: {}
+
+  tapable@2.3.2: {}
+
   tiny-inflate@1.0.3: {}
 
   tinyclip@0.1.12: {}
@@ -2872,8 +5289,9 @@ snapshots:
 
   tsconfck@3.1.6: {}
 
-  tslib@2.8.1:
-    optional: true
+  tslib@2.8.1: {}
+
+  type-fest@4.41.0: {}
 
   ufo@1.6.3: {}
 
@@ -2950,6 +5368,23 @@ snapshots:
       ofetch: 1.5.1
       ufo: 1.6.3
 
+  use-callback-ref@1.3.3(react@19.2.4):
+    dependencies:
+      react: 19.2.4
+      tslib: 2.8.1
+
+  use-sidecar@1.1.3(react@19.2.4):
+    dependencies:
+      detect-node-es: 1.1.0
+      react: 19.2.4
+      tslib: 2.8.1
+
+  use-sync-external-store@1.6.0(react@19.2.4):
+    dependencies:
+      react: 19.2.4
+
+  uuid@10.0.0: {}
+
   vfile-location@5.0.3:
     dependencies:
       '@types/unist': 3.0.3
@@ -2965,7 +5400,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@7.3.1:
+  vite@7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
@@ -2975,16 +5410,22 @@ snapshots:
       tinyglobby: 0.2.15
     optionalDependencies:
       fsevents: 2.3.3
+      jiti: 2.6.1
+      lightningcss: 1.32.0
+      yaml: 2.8.3
 
-  vitefu@1.1.3(vite@7.3.1):
+  vitefu@1.1.3(vite@7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3)):
     optionalDependencies:
-      vite: 7.3.1
+      vite: 7.3.1(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3)
 
   web-namespaces@2.0.1: {}
 
   which-pm-runs@1.1.0: {}
 
   xxhash-wasm@1.1.0: {}
+
+  yaml@2.8.3:
+    optional: true
 
   yargs-parser@22.0.0: {}
 

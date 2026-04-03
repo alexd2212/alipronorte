@@ -1,0 +1,75 @@
+<header class="relative w-full bg-[url('/banner-pages.png')] bg-cover bg-center shadow-[0_4px_15px_rgba(0,0,0,0.3)] py-6 md:pt-10 md:pb-6">
+  
+  <div class="absolute inset-0 bg-chocolate/75"></div>
+
+  <nav class="relative z-10 max-w-300 mx-auto flex justify-between items-center px-8">
+    
+    <div>
+       <a href="/">
+         <img 
+           src="/logo.png" 
+           alt="RoRo's" 
+           class="h-18.75 md:h-25 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] transition-transform duration-300 hover:scale-105" 
+         />
+       </a>
+    </div>
+
+    <ul class="hidden md:flex gap-10">
+      <li>
+        <a href="/" class="text-white font-lora font-semibold text-base drop-shadow-[1px_1px_3px_rgba(0,0,0,0.8)] transition-colors duration-300 hover:text-rojo">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/about" class="text-white font-lora font-semibold text-base drop-shadow-[1px_1px_3px_rgba(0,0,0,0.8)] transition-colors duration-300 hover:text-rojo">
+          Sobre Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="/products" class="text-white font-lora font-semibold text-base drop-shadow-[1px_1px_3px_rgba(0,0,0,0.8)] transition-colors duration-300 hover:text-rojo">
+          Productos
+        </a>
+      </li>
+      <li>
+        <a href="/contact" class="text-white font-lora font-semibold text-base drop-shadow-[1px_1px_3px_rgba(0,0,0,0.8)] transition-colors duration-300 hover:text-rojo">
+          Contacto
+        </a>
+      </li>
+    </ul>
+
+    <div>
+      <a href="/carrito" class="relative text-[1.4rem] hover:scale-110 transition-transform inline-block">
+        🛒 
+        <span id="cart-counter" class="absolute -top-1.5 -right-2.5 bg-rojo text-white text-[0.7rem] px-1.5 py-0.5 rounded-full font-bold leading-none transition-transform duration-200">
+          0
+        </span>
+      </a>
+    </div>
+
+  </nav>
+</header>
+
+<script>
+  // Importamos el store y la función para cargar el carrito
+  import { cartStore, loadCart } from '../store/cartStore.js';
+
+  // 1. Ejecutamos la carga inicial al abrir la página
+  loadCart();
+
+  // 2. Buscamos la etiqueta del número en el HTML
+  const cartCounter = document.getElementById('cart-counter');
+
+  // 3. Nos suscribimos a los cambios. Cada vez que cartStore se modifique (ej. al agregar un producto), esto se ejecuta automático.
+  cartStore.subscribe((cart: any) => {
+    if (cartCounter) {
+      const totalItems = cart?.lineItems?.reduce((total: number, item: any) => total + item.quantity, 0) || 0;
+      
+      cartCounter.textContent = totalItems.toString();
+      
+      if (totalItems > 0) {
+        cartCounter.classList.add('scale-110');
+        setTimeout(() => cartCounter.classList.remove('scale-110'), 200);
+      }
+    }
+  });
+</script>
