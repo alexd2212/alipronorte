@@ -1,11 +1,9 @@
 ---
-import layout from "../layouts/layout.astro";
+import Layout from "../layouts/layout.astro";
 import { wixClient } from "../wix-client";
-
-const { items } = await wixClient.products.queryProducts().limit(4).find();
 ---
 
-<layout title="RoRo's | Prepara tu Salsa">
+<Layout title="RoRo's | Prepara tu Salsa">
     <section class="h-screen bg-[url('/banner-index.png')] bg-cover bg-center relative flex items-center justify-center">
         <div class="absolute inset-0 bg-black/25 flex items-center justify-center">
             <div class="text-center text-white flex flex-col items-center">
@@ -58,4 +56,4 @@ const { items } = await wixClient.products.queryProducts().limit(4).find();
             </div>
         </div>
     </section>
-</layout>
+</Layout>
