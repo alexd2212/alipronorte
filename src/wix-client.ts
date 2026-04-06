@@ -5,6 +5,6 @@ import { currentCart } from '@wix/ecom';
 export const wixClient = createClient({
   modules: { products, currentCart },
   auth: OAuthStrategy({
-    clientId: import.meta.env.PUBLIC_WIX_CLIENT_ID,
+    clientId: "1380b703-ce81-ff05-f115-39571d94dfcd", // Pon tu ID real aquí
   })
 });
